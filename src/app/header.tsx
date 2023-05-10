@@ -411,7 +411,7 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="fixed top-0 left-0 w-[100%] h-[50px] destop_nav">
+      <nav className="fixed top-0 left-0 w-[100%] h-[50px] destop_nav z-[200]">
         <div
           style={{ backgroundColor: bgcolor }}
           className="  w-[100%] h-[auto] flex items-center backdrop-blur flex-col z-50"
@@ -571,7 +571,7 @@ const Header = () => {
       </nav>
 
       {/* mobile navigations */}
-      <nav className="fixed top-0 left-0 mob_nav w-[100%] h-[40px] bg-[#000000a5] flex justify-center backdrop-blur">
+      <nav className="fixed top-0 left-0 mob_nav w-[100%] h-[40px] bg-[#000000a5] flex justify-center backdrop-blur z-[200]">
         <div className=" w-[90%] flex justify-between items-center text-gray-300 h-[100%] text-[20px]">
           <i className="bi bi-apple mob_nav_items "></i>
           <div className="flex justify-between w-[35%] h-[100%] items-center">
@@ -588,7 +588,7 @@ const Header = () => {
       {/* first menu options for the mobile version */}
       <div
         style={{ height: mobileDisplay }}
-        className=" transist overflow-hidden fixed top-0 left-0 bg-[#1c1c1c] w-[100%] h-[100%] px-[10px] flex-col"
+        className=" transist overflow-hidden fixed top-0 left-0 bg-[#1c1c1c] w-[100%] h-[100%] px-[10px] flex-col z-[300] "
       >
         <div
           className="text-white text-[30px] justify-end h-[30px] flex w-[100%]"
