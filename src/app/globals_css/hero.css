@@ -7,6 +7,31 @@
   display: none;
 }
 
+.col_1 {
+  background-image: url(../../../public/grid_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.col_2 {
+  background-image: url(../../../public/grid_2.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.col_3 {
+  background-image: url(../../../public/grid_3.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.col_4 {
+  background-image: url(../../../public/grid_4.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 830px) {
   .excerpt {
     font-size: 15px;

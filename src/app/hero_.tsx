@@ -22,6 +22,10 @@ const Hero_3_section = () => {
       </div>
 
       {/* first hero section */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
       <div className=" general_hero hero_1 mb-[10px] h-[580px]  w-[100%] bg-black flex flex-col justify-between items-center overflow-clip cursor">
         <div className="  w-[100%]  h-[auto] flex justify-center items-center flex-col gap-[10px] py-[40px] text-[#f3f3f6] ">
           <h1 className="text-[55px] font-[700] sm:text-[32px]">
@@ -104,6 +108,89 @@ const Hero_3_section = () => {
           alt="first mobile hero image"
           className="w-[100%] h-[auto]"
         />
+      </div>
+
+      {/* second hero section */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      <div className="bg-white  w-[100%] h-[1300px] sm:h-[2200px] flex flex-wrap justify-around ">
+        <div className=" w-[49%] h-[48%] cursor sm:w-[100%] sm:h-[24%] col_1">
+          <div className="w-[100%] h-[auto] flex justify-center flex-col items-center gap-[5px] pt-[50px] flex-wrap ">
+            <h1 className="text-[40px] font-[700] sm:text-[30px] ">
+              {" "}
+              <i className="bi bi-apple"></i>
+              Trade In
+            </h1>
+            <p className="text-[25px] sm:text-[15px]">
+              upgrade and save. it's that easy
+            </p>
+            <p className="hover:underline hover:underline-offset-4 text-[blue] cursor text-[20px] sm:text-[19px]">
+              See what your device is worth{" "}
+              <i className=" bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        {/*  */}
+
+        <div className=" w-[49%] h-[48%] cursor sm:w-[100%] sm:h-[24%] col_2">
+          <div className="w-[100%] h-[100%] py-[50px] flex justify-end   flex-col items-center gap-[5px]  text-[#e3e3e7] flex-wrap">
+            <h1 className="text-[40px] font-[700] sm:text-[30px] ">
+              {" "}
+              <i className="bi bi-apple"></i>
+              WWDC23
+            </h1>
+            <p className="text-[22px] sm:text-[15px]">
+              Apple Deveoper Conference.
+            </p>
+            <p className="text-[25px] sm:text-[15px]">
+              Join us online June 5-9.
+            </p>
+            <p className="hover:underline hover:underline-offset-4 text-[blue] cursor text-[20px] sm:text-[19px]">
+              Learn more
+              <i className=" bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        {/*  */}
+
+        <div className=" w-[49%] h-[48%] border-b-teal-950 border cursor sm:w-[100%] sm:h-[24%] col_3 ">
+          <div className="w-[100%] h-[100%] py-[50px] flex justify-start   flex-col items-center gap-[5px]  text-[#e3e3e7] flex-wrap">
+            <h1 className="text-[40px] font-[700] sm:text-[30px] ">
+              {" "}
+              Final Cut Pro for iPad
+            </h1>
+            <p className="text-[25px] sm:text-[15px]">
+              Bring your entire studo to your shoot
+            </p>
+            <p className="text-[22px] sm:text-[13px] text-[gray]">
+              Avaliable 5.23
+            </p>
+            <p className="hover:underline hover:underline-offset-4 text-[blue] cursor text-[20px] sm:text-[19px]">
+              Learn more
+              <i className=" bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        <div className=" w-[49%] h-[48%] cursor sm:w-[100%] sm:h-[24%] col_4">
+          <div className="w-[100%] h-[100%] py-[50px] flex justify-start   flex-col items-center gap-[5px]  text-[#e3e3e7] flex-wrap">
+            <h1 className="text-[40px] font-[700] sm:text-[30px] ">
+              {" "}
+              Logic Pro for iPad
+            </h1>
+            <p className="text-[22px] sm:text-[15px]">
+              The ultimate music studio. at your fingertips.
+            </p>
+            <p className="text-[22px] sm:text-[13px] text-[gray]">
+              Avaliable 5.23
+            </p>
+            <p className="hover:underline hover:underline-offset-4 text-[blue] cursor text-[20px] sm:text-[19px]">
+              Learn more
+              <i className=" bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
