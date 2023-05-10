@@ -521,7 +521,10 @@ const Header = () => {
             {subheader.map((e: any, index) => {
               var size = e.ah;
               return (
-                <div className=" flex flex-col justify-start gap-[3px] min-w-[100px] h-[auto] capitalize py-[25px]">
+                <div
+                  key={index}
+                  className=" flex flex-col justify-start gap-[3px] min-w-[100px] h-[auto] capitalize py-[25px]"
+                >
                   <p
                     className="text-[12px]  text-[darkgrey]"
                     style={{ transition: "  1.5s  ease " }}
@@ -531,6 +534,7 @@ const Header = () => {
                   {e.body.map((i: any) => {
                     return (
                       <p
+                        key={index}
                         className="cursor  hover:text-gray-900 text-white font-[700] "
                         style={{ fontSize: size, transition: "  1.5s  ease " }}
                       >
@@ -542,6 +546,7 @@ const Header = () => {
                   {e.excerpt.map((i: any) => {
                     return (
                       <p
+                        key={index}
                         style={{ transition: "  1.5s  ease " }}
                         className="  text-[12px] text-white "
                       >
@@ -591,9 +596,14 @@ const Header = () => {
         </div>
 
         <div className=" flex flex-col h-[70%] justify-around px-[40px]">
-          {mobilearray.map((e) => {
+          {mobilearray.map((e, index) => {
             return (
-              <p className="text-[#d5d5da] text-[30px] hover:text-white">{e}</p>
+              <p
+                key={index}
+                className="text-[#d5d5da] text-[30px] hover:text-white"
+              >
+                {e}
+              </p>
             );
           })}
         </div>
