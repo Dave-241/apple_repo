@@ -1,8 +1,29 @@
 /* mobile css setting */
+.hero1_img {
+  width: 60%;
+  height: auto;
+}
+.mob_hero1_img {
+  display: none;
+}
 
 @media screen and (max-width: 830px) {
   .excerpt {
     font-size: 15px;
     padding: 10px 20px;
   }
+  .hero1_img {
+    display: none;
+  }
+
+  .mob_hero1_img {
+    display: block;
+    width: 70%;
+    height: auto;
+  }
+  .general_hero {
+    height: 540px;
+  }
 }
+
+/* text-[#e3e3e7] */

@@ -9,6 +9,7 @@ const Header = () => {
   const [mobileDisplay, setmobileDisplay] = useState("0");
   const [mobilearray, setmobilearray] = useState([]);
   const [closeMenu, setcloseMenu] = useState("none");
+  const [bgcolor, setbgcolor] = useState("#000000b0");
 
   // shop header
 
@@ -337,6 +338,7 @@ const Header = () => {
   ];
 
   const reset = () => {
+    setbgcolor("#000000b0");
     setheader([]);
     setSubheader([]);
     setsecondheight("0");
@@ -344,6 +346,7 @@ const Header = () => {
   };
 
   const defaultSetting = () => {
+    setbgcolor("black");
     setsecondheight("calc(25vh - 35px)");
     setSubNavHeight("75vh");
   };
@@ -410,7 +413,8 @@ const Header = () => {
     <>
       <nav className="fixed top-0 left-0 w-[100%] h-[50px] destop_nav">
         <div
-          className="  w-[100%] h-[auto] flex items-center bg-gray-950 flex-col z-50"
+          style={{ backgroundColor: bgcolor }}
+          className="  w-[100%] h-[auto] flex items-center backdrop-blur flex-col z-50"
           onMouseLeave={reset}
         >
           {/* this is the main navigation */}
@@ -561,7 +565,7 @@ const Header = () => {
         </div>
 
         <div
-          className="nav_outside_wrap   w-[100%] h-[30vh] bg-[#0000006a]  top-0 left-0"
+          className="nav_outside_wrap   w-[100%] h-[30vh]  backdrop-blur top-0 left-0"
           style={{ height: secondheight, transition: "1s ease" }}
         ></div>
       </nav>
