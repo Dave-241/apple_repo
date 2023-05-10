@@ -115,8 +115,8 @@ const Hero_3_section = () => {
       {/*  */}
       {/*  */}
       {/*  */}
-      <div className="bg-white  w-[100%] h-[1300px] sm:h-[2200px] flex flex-wrap justify-around ">
-        <div className=" w-[49%] h-[48%] cursor sm:w-[100%] sm:h-[24%] col_1">
+      <div className="bg-white  w-[100%] h-[2000px] sm:h-[3300px] flex flex-wrap justify-around ">
+        <div className=" w-[49%] h-[33%] cursor sm:w-[100%] sm:h-[16.3%] col_1">
           <div className="w-[100%] h-[auto] flex justify-center flex-col items-center gap-[5px] pt-[50px] flex-wrap ">
             <h1 className="text-[40px] font-[700] sm:text-[30px] ">
               {" "}
@@ -134,7 +134,7 @@ const Hero_3_section = () => {
         </div>
         {/*  */}
 
-        <div className=" w-[49%] h-[48%] cursor sm:w-[100%] sm:h-[24%] col_2">
+        <div className=" w-[49%] h-[33%] cursor sm:w-[100%] sm:h-[16.3%] col_2">
           <div className="w-[100%] h-[100%] py-[50px] flex justify-end   flex-col items-center gap-[5px]  text-[#e3e3e7] flex-wrap">
             <h1 className="text-[40px] font-[700] sm:text-[30px] ">
               {" "}
@@ -155,7 +155,7 @@ const Hero_3_section = () => {
         </div>
         {/*  */}
 
-        <div className=" w-[49%] h-[48%] border-b-teal-950 border cursor sm:w-[100%] sm:h-[24%] col_3 ">
+        <div className=" w-[49%] h-[33%] cursor sm:w-[100%] sm:h-[16.3%] col_3 ">
           <div className="w-[100%] h-[100%] py-[50px] flex justify-start   flex-col items-center gap-[5px]  text-[#e3e3e7] flex-wrap">
             <h1 className="text-[40px] font-[700] sm:text-[30px] ">
               {" "}
@@ -173,7 +173,8 @@ const Hero_3_section = () => {
             </p>
           </div>
         </div>
-        <div className=" w-[49%] h-[48%] cursor sm:w-[100%] sm:h-[24%] col_4">
+        {/*  */}
+        <div className=" w-[49%]  h-[33%] cursor sm:w-[100%] sm:h-[16.3%] col_4">
           <div className="w-[100%] h-[100%] py-[50px] flex justify-start   flex-col items-center gap-[5px]  text-[#e3e3e7] flex-wrap">
             <h1 className="text-[40px] font-[700] sm:text-[30px] ">
               {" "}
@@ -191,7 +192,51 @@ const Hero_3_section = () => {
             </p>
           </div>
         </div>
+        {/*  */}
+        <div className=" w-[49%]  h-[33%] cursor sm:w-[100%] sm:h-[16.3%] col_5">
+          <div className="w-[100%] h-[100%] py-[50px] flex justify-start   flex-col items-center gap-[5px]  text-black flex-wrap">
+            <h1 className="text-center text-[40px] font-[700] sm:text-[30px] ">
+              {" "}
+              Gifts just waiting <br />
+              to be picked
+            </h1>
+            <p className="text-center text-[22px] sm:text-[15px]">
+              Its not too late to get Mom <br />
+              something great.
+            </p>
+
+            <p className="hover:underline hover:underline-offset-4 text-[blue] cursor text-[20px] sm:text-[19px]">
+              Shop the gift guide
+              <i className=" bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        {/*  */}
+        <div className=" w-[49%]  h-[33%] cursor sm:w-[100%] sm:h-[16.3%] col_6">
+          <div className="w-[100%] h-[100%] py-[50px] flex justify-start   flex-col items-center gap-[5px]  text-black flex-wrap">
+            <h1 className="text-[40px] font-[700] sm:text-[30px] ">
+              {" "}
+              <i className="bi bi-apple"></i>Card
+            </h1>
+            <p className="text-center text-[22px] sm:text-[15px]">
+              Get upto 3% Daily cash back <br /> with every purchase.
+            </p>
+            <div className="flex items-center justify-center gap-[30px]">
+              <p className="hover:underline hover:underline-offset-4 text-[blue] cursor text-[20px] sm:text-[19px]">
+                Learn more
+                <i className=" bi bi-chevron-right"></i>
+              </p>
+
+              <p className="hover:underline hover:underline-offset-4 text-[blue] cursor text-[20px] sm:text-[19px]">
+                Apply now
+                <i className=" bi bi-chevron-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* third hero section which i would coplete later */}
     </>
   );
 };

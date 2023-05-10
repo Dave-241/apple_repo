@@ -31,6 +31,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.col_5 {
+  background-image: url(../../../public/grid_5.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.col_6 {
+  background-image: url(../../../public/grid_6.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 830px) {
   .excerpt {
