@@ -1,7 +1,6 @@
 .nav_items {
   cursor: pointer;
   transition: 1000ms ease;
-  display: block;
 }
 
 .nav_items:hover {
