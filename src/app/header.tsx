@@ -600,7 +600,7 @@ const Header = () => {
           </button>
         </div>
 
-        <div className=" flex flex-col h-[auto] gap-[10px] px-[40px]">
+        <div className=" flex flex-col h-[auto] gap-[5px] px-[40px]">
           {mobilearray.map((e, index) => {
             return (
               <p
