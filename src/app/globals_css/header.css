@@ -1,0 +1,47 @@
+.nav_items {
+  cursor: pointer;
+  transition: 1000ms ease;
+  display: block;
+}
+
+.nav_items:hover {
+  color: white;
+}
+
+.cursor {
+  cursor: pointer;
+}
+.nav_outside_wrap {
+  z-index: 0;
+}
+
+.destop_nav {
+  display: block;
+}
+.mob_nav {
+  display: none;
+}
+
+/* mobile nav styling,  */
+
+@media screen and (max-width: 830px) {
+  .mob_nav {
+    display: flex;
+  }
+
+  .destop_nav {
+    display: none;
+  }
+
+  .mob_nav_items {
+    transition: 1s ease;
+  }
+
+  .mob_nav_items:hover {
+    color: white;
+  }
+
+  .transist {
+    transition: 1s ease;
+  }
+}
