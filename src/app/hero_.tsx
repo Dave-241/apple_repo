@@ -124,7 +124,7 @@ const Hero_3_section = () => {
               Trade In
             </h1>
             <p className="text-[25px] sm:text-[15px]">
-              upgrade and save. it's that easy
+              upgrade and save. its that easy
             </p>
             <p className="hover:underline hover:underline-offset-4 text-[blue] cursor text-[20px] sm:text-[19px]">
               See what your device is worth{" "}
