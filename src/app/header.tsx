@@ -398,7 +398,7 @@ const Header = () => {
   const show_mob_nav = () => {
     setcloseMenu("flex");
     setmobilearray(mobileMenu);
-    setmobileDisplay("100%");
+    setmobileDisplay("100vh");
   };
 
   const hide_mob_nav = () => {
@@ -408,7 +408,7 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="relative destop_nav">
+      <nav className="fixed top-0 left-0 w-[100%] h-[50px] destop_nav">
         <div
           className="  w-[100%] h-[auto] flex items-center bg-gray-950 flex-col z-50"
           onMouseLeave={reset}
@@ -567,7 +567,7 @@ const Header = () => {
       </nav>
 
       {/* mobile navigations */}
-      <nav className="fixed top-0 left-0 mob_nav w-[100%] h-[50px] bg-[#000000a5] flex justify-center backdrop-blur">
+      <nav className="fixed top-0 left-0 mob_nav w-[100%] h-[40px] bg-[#000000a5] flex justify-center backdrop-blur">
         <div className=" w-[90%] flex justify-between items-center text-gray-300 h-[100%] text-[20px]">
           <i className="bi bi-apple mob_nav_items "></i>
           <div className="flex justify-between w-[35%] h-[100%] items-center">
@@ -580,13 +580,14 @@ const Header = () => {
           </div>
         </div>
       </nav>
+
       {/* first menu options for the mobile version */}
       <div
         style={{ height: mobileDisplay }}
-        className=" transist absolute bg-[#1c1c1c] w-[100%] h-[100%] px-[10px] flex-col"
+        className=" transist overflow-hidden fixed top-0 left-0 bg-[#1c1c1c] w-[100%] h-[100%] px-[10px] flex-col"
       >
         <div
-          className="text-white text-[30px] justify-end h-[10%] flex w-[100%]"
+          className="text-white text-[30px] justify-end h-[30px] flex w-[100%]"
           style={{ display: closeMenu }}
         >
           {" "}
@@ -595,7 +596,7 @@ const Header = () => {
           </button>
         </div>
 
-        <div className=" flex flex-col h-[70%] justify-around px-[40px]">
+        <div className=" flex flex-col h-[auto] gap-[10px] px-[40px]">
           {mobilearray.map((e, index) => {
             return (
               <p
