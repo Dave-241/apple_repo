@@ -46,8 +46,65 @@ const Hero_3_section = () => {
           className="mob_hero1_img"
         />
       </div>
-      <div className=" general_hero hero_2 relative mb-[10px] h-[580px]  w-[100%] bg-white "></div>
-      <div className=" general_hero hero_3 relative mb-[10px] h-[580px]  w-[100%]  bg-black"></div>
+      <div className=" general_hero hero_2 mb-[10px] h-[580px]  w-[100%] bg-[#FBFBFD] flex flex-col justify-around items-center overflow-clip cursor">
+        <div className="  w-[100%]  h-[auto] flex justify-center items-center flex-col gap-[10px] py-[40px] text-[black] ">
+          <h1 className="text-[55px] font-[700] sm:text-[32px]">iPhone 14</h1>
+          <h3 className="text-[30px] sm:text-[19px]">Wonderfull.</h3>
+          <div className=" text-[blue] flex gap-[30px] text-[20px] sm:text-[19px]">
+            <p className="cursor hover:underline hover:underline-offset-4 ">
+              Learn more <i className=" bi bi-chevron-right"></i>
+            </p>
+            <p className="cursor hover:underline hover:underline-offset-4">
+              Buy <i className=" bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <Image
+          src={hero2}
+          alt="first hero image"
+          className="w-[42%] sm:hidden"
+        />
+
+        <Image
+          src={hero2}
+          alt="first mobile hero image"
+          className="w-[90%] mr-[20px] hidden sm:block"
+        />
+      </div>
+      <div className=" general_hero hero_3 mb-[10px] h-[580px]  w-[100%] bg-black flex flex-col justify-between items-center overflow-clip cursor">
+        <div className="  w-[100%]  h-[auto] flex justify-center items-center flex-col gap-[8px] py-[40px] text-[#f3f3f6] ">
+          <h1 className="text-[55px] font-[700] sm:text-[32px]">
+            {" "}
+            <i className="bi bi-apple"></i>
+            WATCH
+          </h1>
+          <p className="text-[darkred] tracking-[2px] font-[700] text-[20px]">
+            SERIES 8
+          </p>
+          <h3 className="text-[30px] sm:text-[19px]">A healthy leap ahead.</h3>
+          <div className=" text-[blue] flex gap-[30px] text-[20px] sm:text-[19px]">
+            <p className="cursor hover:underline hover:underline-offset-4 ">
+              Learn more <i className=" bi bi-chevron-right"></i>
+            </p>
+            <p className="cursor hover:underline hover:underline-offset-4">
+              Buy <i className=" bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+
+        <Image
+          src={hero3}
+          alt="first hero image"
+          className="w-[35%] sm:hidden"
+        />
+
+        <Image
+          src={hero3}
+          alt="first mobile hero image"
+          className="w-[100%] h-[auto]"
+        />
+      </div>
     </>
   );
 };
