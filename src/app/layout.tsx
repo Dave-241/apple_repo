@@ -7,6 +7,7 @@ import "./globals_css/footer.css";
 import "./globals_css/header.css";
 import "./globals_css/hero.css";
 import Header from "./header";
+import Footer from "./footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative">
-        <Header />
-        {children}
-      </body>
+      <body className="relative">{children}</body>
     </html>
   );
 }
