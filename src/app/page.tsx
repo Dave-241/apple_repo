@@ -28,7 +28,8 @@ export default function Home() {
 
   useEffect(() => {
     setcontent(contentInfo);
-  }, [contentInfo]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       <Header />

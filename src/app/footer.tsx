@@ -116,7 +116,8 @@ const Footer = () => {
 
   useEffect(() => {
     setsecondContent(content2);
-  }, [content2]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       <section className="footer w-[100%] bg-[#F5F5F7] flex justify-center">
