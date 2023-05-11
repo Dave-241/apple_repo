@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import Hero_3_section from "./hero_";
 import Header from "./header";
 import Footer from "./footer";
+import Slider from "./slider";
 
 export default function Home() {
   const [content, setcontent] = useState([]);
@@ -27,17 +28,18 @@ export default function Home() {
 
   useEffect(() => {
     setcontent(contentInfo);
-  }, []);
+  }, [contentInfo]);
   return (
     <>
       <Header />
       <Hero_3_section />
+      <Slider />
       {/* the manual footer section types */}
       <section className="footer w-[100%] bg-[#F5F5F7] flex justify-center">
         <div className="w-[100%] px-[250px] sm:px-[15px]">
           <ul className="text-[#878787] text-[12px] border-b-gray-400 border-b-2 flex flex-col gap-[10px] py-[20px]">
-            {content.map((e) => {
-              return <li>{e}</li>;
+            {content.map((e, index) => {
+              return <li key={index}>{e}</li>;
             })}
           </ul>
         </div>

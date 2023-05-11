@@ -116,7 +116,7 @@ const Footer = () => {
 
   useEffect(() => {
     setsecondContent(content2);
-  }, []);
+  }, [content2]);
   return (
     <>
       <section className="footer w-[100%] bg-[#F5F5F7] flex justify-center">
@@ -125,18 +125,27 @@ const Footer = () => {
           {/* this is the main wrap for the second wrap   */}
           {/* for desktop . this would be hidden on mobile screens */}
           <div className="flex justify-start gap-[20px] w-[100%] py-[20px] sm:hidden">
-            {content2.map((e: any) => {
+            {content2.map((e: any, index: any) => {
               return (
-                <div className=" w-[20%] h-[auto] flex flex-col gap-[20px]">
-                  {e.map((i: any) => {
+                <div
+                  key={index}
+                  className=" w-[20%] h-[auto] flex flex-col gap-[20px]"
+                >
+                  {e.map((i: any, b: any) => {
                     return (
-                      <div className=" w-[100%] h-[auto] flex flex-col gap-[5px]">
+                      <div
+                        key={b}
+                        className=" w-[100%] h-[auto] flex flex-col gap-[5px]"
+                      >
                         <p className="capitalize text-[#646464] text-[13px] font-[600]">
                           {i.header}
                         </p>
-                        {i.body.map((p: any) => {
+                        {i.body.map((p: any, c: any) => {
                           return (
-                            <p className="text-[#878787] text-[10px] capitalize hover:underline hover:underline-offset-4 cursor">
+                            <p
+                              key={c}
+                              className="text-[#878787] text-[10px] capitalize hover:underline hover:underline-offset-4 cursor"
+                            >
                               {p}
                             </p>
                           );
