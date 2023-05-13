@@ -425,13 +425,14 @@ const Header = (props: any) => {
             className="nav_all_wrap w-[70%]  h-[35px] flex justify-between text-[11px] items-center  font-[400]"
             style={{ color: navtext }}
           >
-            <Link href="/">
+            <Link href="/" style={{ color: navtext }}>
               <i
                 className="bi bi-apple nav_items text-[20px]"
                 onMouseMove={reset}
               ></i>
             </Link>
             <Link
+              style={{ color: navtext }}
               href="/store"
               className="nav_items"
               onMouseMove={() => {
@@ -597,7 +598,7 @@ const Header = (props: any) => {
           className=" w-[90%] flex justify-between items-center  h-[100%] text-[20px]"
           style={{ color: navtext }}
         >
-          <Link href="/">
+          <Link href="/" style={{ color: navtext }}>
             {" "}
             <i className="bi bi-apple mob_nav_items "></i>{" "}
           </Link>
@@ -633,7 +634,7 @@ const Header = (props: any) => {
               <Link
                 href={e}
                 key={index}
-                style={{ color: navtext }}
+                style={{ color: navtext, textDecoration: "none" }}
                 className=" text-[30px] hover:text-white capitalize"
               >
                 {e}
