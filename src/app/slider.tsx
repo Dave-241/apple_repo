@@ -298,7 +298,7 @@ const Slider = () => {
                   <span className="font-[700] text-[30px] text-center">
                     Comedy .
                   </span>{" "}
-                  Kindness makes a comeback{" "}
+                  Kindness makes a Comeback{" "}
                 </p>
 
                 <p className="text-white font-[400] sm:block hidden text-center ">
