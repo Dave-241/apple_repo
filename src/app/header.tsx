@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
-const Header = () => {
+const Header = (props: any) => {
+  const { navbg, navtext, opacity } = props;
   const [subheader, setSubheader] = useState([]);
   const [subNavHeight, setSubNavHeight] = useState("0");
   const [header, setheader] = useState([]);
@@ -9,7 +11,7 @@ const Header = () => {
   const [mobileDisplay, setmobileDisplay] = useState("0");
   const [mobilearray, setmobilearray] = useState([]);
   const [closeMenu, setcloseMenu] = useState("none");
-  const [bgcolor, setbgcolor] = useState("#000000b0");
+  const [bgcolor, setbgcolor] = useState(navbg);
 
   // shop header
 
@@ -338,7 +340,8 @@ const Header = () => {
   ];
 
   const reset = () => {
-    setbgcolor("#000000b0");
+    setbgcolor(navbg);
+    // 000000b0
     setheader([]);
     setSubheader([]);
     setsecondheight("0");
@@ -346,7 +349,7 @@ const Header = () => {
   };
 
   const defaultSetting = () => {
-    setbgcolor("black");
+    setbgcolor(navbg);
     setsecondheight("calc(25vh - 35px)");
     setSubNavHeight("75vh");
   };
@@ -386,16 +389,16 @@ const Header = () => {
 
   // mobile menu array
   const mobileMenu: any = [
-    "Store",
-    "Mac",
+    "store",
+    "mac",
     "iPad",
     "iPhone",
-    "Watch",
-    "AirPods",
-    "TV & Home",
-    "Entertainment",
-    "Accessories",
-    "Support",
+    "watch",
+    "airPods",
+    "tV",
+    "entertainment",
+    "accessories",
+    "support",
   ];
 
   const show_mob_nav = () => {
@@ -418,12 +421,18 @@ const Header = () => {
           onMouseLeave={reset}
         >
           {/* this is the main navigation */}
-          <div className="nav_all_wrap w-[70%]  h-[35px] flex justify-between text-[11px] items-center text-[lightgrey] font-[400]">
-            <i
-              className="bi bi-apple nav_items text-[20px]"
-              onMouseMove={reset}
-            ></i>
-            <p
+          <div
+            className="nav_all_wrap w-[70%]  h-[35px] flex justify-between text-[11px] items-center  font-[400]"
+            style={{ color: navtext }}
+          >
+            <Link href="/">
+              <i
+                className="bi bi-apple nav_items text-[20px]"
+                onMouseMove={reset}
+              ></i>
+            </Link>
+            <Link
+              href="/store"
               className="nav_items"
               onMouseMove={() => {
                 store();
@@ -431,7 +440,7 @@ const Header = () => {
               }}
             >
               Store
-            </p>
+            </Link>
             <p
               className="nav_items"
               onMouseMove={() => {
@@ -539,8 +548,13 @@ const Header = () => {
                     return (
                       <p
                         key={index}
-                        className="cursor  hover:text-gray-900 text-white font-[700] "
-                        style={{ fontSize: size, transition: "  1.5s  ease " }}
+                        className="cursor  hover:text-gray-900 font-[700] "
+                        style={{
+                          fontSize: size,
+                          transition: "  1.5s  ease ",
+                          color: navtext,
+                          opacity: opacity,
+                        }}
                       >
                         {i}
                       </p>
@@ -551,8 +565,12 @@ const Header = () => {
                     return (
                       <p
                         key={index}
-                        style={{ transition: "  1.5s  ease " }}
-                        className="  text-[12px] text-white "
+                        style={{
+                          transition: "  1.5s  ease ",
+                          color: navtext,
+                          opacity: opacity,
+                        }}
+                        className="  text-[12px] "
                       >
                         {i}
                       </p>
@@ -571,9 +589,18 @@ const Header = () => {
       </nav>
 
       {/* mobile navigations */}
-      <nav className="fixed top-0 left-0 mob_nav w-[100%] h-[40px] bg-[#000000a5] flex justify-center backdrop-blur z-[200]">
-        <div className=" w-[90%] flex justify-between items-center text-gray-300 h-[100%] text-[20px]">
-          <i className="bi bi-apple mob_nav_items "></i>
+      <nav
+        className="fixed top-0 left-0 mob_nav w-[100%] h-[40px]  flex justify-center backdrop-blur z-[200] "
+        style={{ backgroundColor: navbg }}
+      >
+        <div
+          className=" w-[90%] flex justify-between items-center  h-[100%] text-[20px]"
+          style={{ color: navtext }}
+        >
+          <Link href="/">
+            {" "}
+            <i className="bi bi-apple mob_nav_items "></i>{" "}
+          </Link>
           <div className="flex justify-between w-[35%] h-[100%] items-center">
             <i className=" bi bi-search mob_nav_items"></i>
             <i className=" bi bi-bag mob_nav_items"></i>
@@ -587,12 +614,12 @@ const Header = () => {
 
       {/* first menu options for the mobile version */}
       <div
-        style={{ height: mobileDisplay }}
-        className=" transist overflow-hidden fixed top-0 left-0 bg-[#1c1c1c] w-[100%] h-[100%] px-[10px] flex-col z-[300] "
+        style={{ height: mobileDisplay, backgroundColor: navbg }}
+        className=" transist overflow-hidden fixed top-0 left-0  w-[100%] h-[100%] px-[10px] flex-col z-[300] "
       >
         <div
-          className="text-white text-[30px] justify-end h-[30px] flex w-[100%]"
-          style={{ display: closeMenu }}
+          className=" text-[30px] justify-end h-[30px] flex w-[100%]"
+          style={{ display: closeMenu, color: navtext }}
         >
           {" "}
           <button className="w-[fit-content] " onClick={hide_mob_nav}>
@@ -603,12 +630,14 @@ const Header = () => {
         <div className=" flex flex-col h-[auto] gap-[5px] px-[40px]">
           {mobilearray.map((e, index) => {
             return (
-              <p
+              <Link
+                href={e}
                 key={index}
-                className="text-[#d5d5da] text-[30px] hover:text-white"
+                style={{ color: navtext }}
+                className=" text-[30px] hover:text-white capitalize"
               >
                 {e}
-              </p>
+              </Link>
             );
           })}
         </div>

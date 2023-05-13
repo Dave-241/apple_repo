@@ -32,7 +32,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Header />
+      <Header navbg="black" navtext="lightgray" opacity={1} />
       <Hero_3_section />
       <Slider />
       <section className="footer w-[100%] bg-[#F5F5F7] flex justify-center">
