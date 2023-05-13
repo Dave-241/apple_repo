@@ -10,12 +10,23 @@ const Hero_3_section = () => {
     <>
       {/* little except text */}
       <div className="w-[100%] h-[auto] py-[10px] bg-white text-center  flex justify-center items-center mt-[40px] excerpt text-[15px]">
-        <p className="">
-          Get $200 - $630 in credit toward iPhone 14 or iPhone 14 Pro when you
-          trade in iPhone 11 or higher.1{" "}
+        <p className="sm:hidden capitalize text-center">
+          Davis Isibor. note: only the main navigations are functioning and
+          linked. the dropdown menu isnt linked to any page here. this is an
+          apple clone with limited number of pages
           <span className="text-[blue] hover:underline hover:underline-offset-4 cursor">
             {" "}
-            Shop iPhone
+            Apple Clone (designed by Davis)
+            <i className=" bi bi-chevron-right"></i>{" "}
+          </span>
+        </p>
+
+        <p className="sm:block hidden capitalize text-center">
+          apple clone. note : only the main navigation links do function. links
+          embeded in pages do not function and is not linked to any page here
+          <span className="text-[blue] hover:underline hover:underline-offset-4 cursor">
+            {" "}
+            Apple Clone (designed by Davis)
             <i className=" bi bi-chevron-right"></i>{" "}
           </span>
         </p>
