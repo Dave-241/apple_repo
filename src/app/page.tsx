@@ -35,7 +35,6 @@ export default function Home() {
       <Header />
       <Hero_3_section />
       <Slider />
-      {/* the manual footer section types */}
       <section className="footer w-[100%] bg-[#F5F5F7] flex justify-center">
         <div className="w-[100%] px-[250px] sm:px-[15px]">
           <ul className="text-[#878787] text-[12px] border-b-gray-400 border-b-2 flex flex-col gap-[10px] py-[20px]">
