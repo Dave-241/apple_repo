@@ -6,7 +6,7 @@ const Awesome = () => {
     <>
       <Header navbg="#F5F5F7" navtext="black" opacity="0.5" />
       {/* little except text */}
-      <div className="w-[100%] h-[auto] py-[10px] bg-white text-center  flex justify-center items-center mt-[40px] excerpt text-[15px]">
+      <div className="w-[100%] h-[auto] py-[12px] bg-white text-center  flex justify-center items-center mt-[40px] excerpt text-[15px]">
         <p className="sm:hidden capitalize text-center">
           Davis Isibor. note: only the main navigations are functioning and
           linked. the dropdown menu isnt linked to any page here. this is an
