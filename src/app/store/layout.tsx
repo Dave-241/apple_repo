@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative">{children}</body>
+      <body className="relative bg-[#F5F5F7]">{children}</body>
     </html>
   );
 }
