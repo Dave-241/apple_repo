@@ -10,7 +10,7 @@ const Hero_3_section = () => {
     <>
       {/* little except text */}
       <div className="w-[100%] h-[auto] py-[10px] bg-white text-center  flex justify-center items-center mt-[40px] excerpt text-[15px]">
-        <p className="sm:hidden capitalize text-center">
+        <p className="sm:hidden capitalize text-center w-[70%]">
           Davis Isibor. note: only the main navigations are functioning and
           linked. the dropdown menu isnt linked to any page here. this is an
           apple clone with limited number of pages
@@ -21,7 +21,7 @@ const Hero_3_section = () => {
           </span>
         </p>
 
-        <p className="sm:block hidden capitalize text-center">
+        <p className="sm:block hidden capitalize text-center w-[95%]">
           apple clone. note : only the main navigation links do function. links
           embeded in pages do not function and is not linked to any page here
           <span className="text-[blue] hover:underline hover:underline-offset-4 cursor">
