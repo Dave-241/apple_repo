@@ -1,0 +1,59 @@
+.store_excerpt {
+  background-color: white;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes example {
+  0% {
+    color: white;
+    background-color: blue;
+    translate: 0px -100px;
+  }
+  10% {
+    color: white;
+    background-color: blue;
+    translate: 0px -100px;
+  }
+  20% {
+    color: white;
+    background-color: blue;
+  }
+  30% {
+    color: white;
+    background-color: blue;
+  }
+  40% {
+    color: white;
+    background-color: blue;
+  }
+  50% {
+    color: white;
+    background-color: blue;
+  }
+  60% {
+    color: white;
+    background-color: blue;
+  }
+  70% {
+    color: white;
+    background-color: blue;
+  }
+  80% {
+    color: white;
+    background-color: blue;
+  }
+  90% {
+    color: white;
+    background-color: blue;
+  }
+  100% {
+    color: black;
+    background-color: white;
+    translate: 0px 0px;
+  }
+}
