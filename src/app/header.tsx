@@ -591,7 +591,7 @@ const Header = (props: any) => {
 
       {/* mobile navigations */}
       <nav
-        className="fixed top-0 left-0 mob_nav w-[100%] h-[40px]  flex justify-center backdrop-blur z-[200] "
+        className="fixed top-0 left-0 mob_nav w-[100%] h-[40px]  flex justify-center backdrop-blur z-[200] hidden sm:flex"
         style={{ backgroundColor: navbg }}
       >
         <div
