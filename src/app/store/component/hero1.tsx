@@ -93,9 +93,9 @@ const Hero_1 = () => {
         onMouseLeave={hidectn}
       >
         <div className="mob_store_hero1_wrap ">
-          {MainWrap.map((e: any) => {
+          {MainWrap.map((e: any, index: any) => {
             return (
-              <div className="store_hero1_main_col ">
+              <div className="store_hero1_main_col " key={index}>
                 <div className="store_hero1_img">
                   <Image
                     src={e.img}
@@ -113,9 +113,9 @@ const Hero_1 = () => {
           className="store_hero1_wrap "
           style={{ translate: `calc(${sign}${translate}vw) 0px` }}
         >
-          {MainWrap.map((e: any) => {
+          {MainWrap.map((e: any, index: any) => {
             return (
-              <div className="store_hero1_main_col ">
+              <div className="store_hero1_main_col " key={index}>
                 <div className="store_hero1_img">
                   <Image
                     src={e.img}
