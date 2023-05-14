@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import Header from "../header";
+import Hero from "./component/hero";
+import Hero_1 from "./component/hero1";
 
 const Awesome = () => {
   const [desktop_ex, setdesktop_ex] = useState("");
@@ -24,16 +26,16 @@ const Awesome = () => {
 
   useEffect(() => {
     setTimeout(change, 2000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
-      <Header navbg="#F5F5F7" navtext="black" opacity="0.5" />
-      {/* little except text */}
+      <Header navbg="#F3F5F7" navtext="black" opacity="0.5" />
       <div
         className="store_excerpt w-[100%] h-[auto] text-center    mt-[40px]  text-[15px] first-letter "
         style={{ padding: display }}
       >
-        <p className="sm:hidden capitalize text-center w-[80%]">
+        <p className="sm:hidden capitalize text-center w-[70%]">
           {desktop_ex}
           <span className="text-[blue] hover:underline hover:underline-offset-4 cursor">
             {" "}
@@ -57,6 +59,8 @@ const Awesome = () => {
           </span>
         </p>
       </div>
+      <Hero />
+      <Hero_1 />
     </>
   );
 };
