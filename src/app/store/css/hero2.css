@@ -7,13 +7,13 @@
   justify-content: center; */
   background-color: #f3f5f7;
   height: 550px;
-  /* -ms-overflow-style: none; */
+  -ms-overflow-style: none;
 }
 
-/* .store_hero2_all_wrap::-webkit-scrollbar {
+.store_hero2_all_wrap::-webkit-scrollbar {
   display: none;
   width: 0 !important;
-} */
+}
 .store_hero2_wrap {
   display: flex;
   height: auto;
