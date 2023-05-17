@@ -23,7 +23,7 @@ const Hero_4 = () => {
         break;
       case "0":
         setsign("-");
-        settranslate("150");
+        settranslate("180");
         break;
       // case "420":
       //   settranslate("850");
@@ -68,7 +68,7 @@ const Hero_4 = () => {
       // case "850":
       //   settranslate("420");
       //   break;
-      case "150":
+      case "180":
         setsign("+");
         settranslate("0");
         break;
@@ -88,14 +88,14 @@ const Hero_4 = () => {
   };
 
   const showctn = () => {
-    translate == "150" ? setright("none") : setright("flex");
+    translate == "180" ? setright("none") : setright("flex");
     // translate < 20 ? settranslate(20) : null;
 
     translate == "14" ? setleft("none") : setleft("flex");
   };
 
   useEffect(() => {
-    translate == "150 " ? setright("none") : setright("flex");
+    translate == "180 " ? setright("none") : setright("flex");
     // translate < 20 ? settranslate(20) : null;
 
     translate == "14" ? setleft("none") : setleft("flex");
@@ -104,7 +104,7 @@ const Hero_4 = () => {
   return (
     <>
       <div className="w-full py-[20px] sm:py-[10px] flex justify-center  bg-[#F3F5F7] text-[30px] sm:text-[25px] font-[700] pt-[80px] ">
-        <p className="text-[gray] sm:w-[90%]  w-[70%]">
+        <p className="text-[gray] sm:w-[90%] sm:pt-[50px]  w-[70%]">
           <span className="text-black">The Apple Store difference. </span>Even
           more reasons to shop with us.{" "}
         </p>
@@ -117,7 +117,62 @@ const Hero_4 = () => {
         onMouseMove={showctn}
         onMouseLeave={hidectn}
       >
-        <div className="mob_store_hero3_wrap "></div>
+        <div className="mob_store_hero3_wrap ">
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-truck icons box1"></i>
+              <h1 className="">
+                Enjoy <span className="box1">two-hour delivery</span> from an
+                Apple Store, <span className="box1">free delivery</span>, or{" "}
+                <span className="box1">easy pickup.</span>
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-device-ssd-fill icons box2"></i>
+              <h1 className="">
+                <span className="box2">Trade in your current device. </span>
+                Get credit toward a new one.{" "}
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-card-heading icons box1"></i>
+              <h1 className="">
+                {" "}
+                Pay in full or
+                <span className="box1"> pay over time. </span>
+                Your choice.
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-cart-fill icons box3"></i>
+              <h1 className="">
+                {" "}
+                Get a<span className="box3"> personalized shopping </span>
+                experience in the
+                <span className="box3"> Apple Store app.</span>
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-emoji-smile icons box3"></i>
+              <h1 className="">
+                {" "}
+                Make them yours.
+                <span className="box3">
+                  {" "}
+                  Engrave a mix of emoji, names and numbers for free.{" "}
+                </span>
+              </h1>
+            </div>
+          </div>
+        </div>
 
         {/* this is for the desktop version  */}
         {/*  */}
@@ -134,11 +189,55 @@ const Hero_4 = () => {
         >
           <div className="store_hero4_main_col">
             <div className="store_hero4 ">
-              <i className="bi bi-truck icons"></i>
+              <i className="bi bi-truck icons box1"></i>
               <h1 className="">
                 Enjoy <span className="box1">two-hour delivery</span> from an
                 Apple Store, <span className="box1">free delivery</span>, or{" "}
                 <span className="box1">easy pickup.</span>
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-device-ssd-fill icons box2"></i>
+              <h1 className="">
+                <span className="box2">Trade in your current device. </span>
+                Get credit toward a new one.{" "}
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-card-heading icons box1"></i>
+              <h1 className="">
+                {" "}
+                Pay in full or
+                <span className="box1"> pay over time. </span>
+                Your choice.
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-cart-fill icons box3"></i>
+              <h1 className="">
+                {" "}
+                Get a<span className="box3"> personalized shopping </span>
+                experience in the
+                <span className="box3"> Apple Store app.</span>
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-emoji-smile icons box3"></i>
+              <h1 className="">
+                {" "}
+                Make them yours.
+                <span className="box3">
+                  {" "}
+                  Engrave a mix of emoji, names and numbers for free.{" "}
+                </span>
               </h1>
             </div>
           </div>

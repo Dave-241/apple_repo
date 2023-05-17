@@ -122,7 +122,7 @@ const Hero_ = () => {
             <div className="store_hero3 flex flex-col gap-[10px] p-[30px] font-[700]">
               <p className="text-[12px]">APPLE SPECIALIST</p>
               <h1 className="text-[25px]">
-                Shop one on one with a <br /> Specialist. Online or in a store.
+                Shop one on one with a Specialist. Online or in a store.
               </h1>
             </div>
           </div>
@@ -131,10 +131,10 @@ const Hero_ = () => {
             <div className="store_hero3 flex flex-col gap-[10px] p-[30px] font-[700]">
               <p className="text-[15px] text-[darkred]">NEW</p>
               <h1 className="text-[25px] text-white">
-                Shop with a specialist <br /> over video.
+                Shop with a specialist over video.
               </h1>
               <p className="text-white">
-                Choose your next iPhone <br /> in a guided, one-way <br /> video
+                Choose your next iPhone in a guided, one-way <br /> video
                 session
               </p>
             </div>

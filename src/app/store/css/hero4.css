@@ -6,7 +6,7 @@
   /* align-items: center;
   justify-content: center; */
   background-color: #f3f5f7;
-  height: 500px;
+  height: 250px;
   -ms-overflow-style: none;
 }
 
@@ -27,21 +27,25 @@
 .store_hero4_main_col {
   width: 300px;
   height: 250px;
-  border-radius: 18px;
-  border: 1px solid;
   display: flex;
   justify-content: center;
   transition: 1s ease;
   font-size: 24px;
+  border-radius: 18px;
+
+  background-color: white;
+
+  /* align-items: center; */
 }
 .store_hero4 {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-weight: 700;
-  width: 80%;
-  border: 1px solid;
-  justify-content: center;
+  font-size: 24px;
+  width: 100%;
+  padding: 10px 00px 0 20px;
+  justify-content: start;
 }
 
 .icons {
@@ -60,6 +64,7 @@
 
 .store_hero4_main_col:hover {
   transform: scale(1.05);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .mob_store_hero4_wrap {
@@ -73,12 +78,17 @@
     height: 500px;
   }
   .store_hero4_main_col {
-    width: 350px;
-    height: 500px;
+    width: 300px;
+    height: 200px;
     margin-right: 20px;
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+  }
+
+  .store_hero4 {
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
   }
 
   .store_hero3_right {
