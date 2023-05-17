@@ -143,12 +143,12 @@ const Hero_ = () => {
           {/*  */}
           <div className=" store_hero3_parent_col">
             <div className="store_hero3_child_col store_hero3_img3  ">
-              <p className="p-[20px] text-[22px] font-[700]">
+              <p className="p-[20px] text-[20px] font-[700]">
                 Get to know your new device <br /> with a free personal session
               </p>
             </div>
             <div className="store_hero3_child_col store_hero3_img4">
-              <p className="p-[20px] text-[22px] font-[700]">
+              <p className="p-[20px] text-[20px] font-[700]">
                 Get expert service <br /> and support at the <br /> Genius Bar.
               </p>
             </div>

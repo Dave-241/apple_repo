@@ -136,7 +136,9 @@ const Hero_4 = () => {
             <div className="store_hero4 ">
               <i className="bi bi-truck icons"></i>
               <h1 className="">
-                Shop one on one with a <br /> Specialist. Online or store.
+                Enjoy <span className="box1">two-hour delivery</span> from an
+                Apple Store, <span className="box1">free delivery</span>, or{" "}
+                <span className="box1">easy pickup.</span>
               </h1>
             </div>
           </div>
