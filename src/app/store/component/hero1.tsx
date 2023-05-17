@@ -13,10 +13,11 @@ import img10 from "../../../../public/store/store_hero1_10.png";
 
 const Hero_1 = () => {
   const [MainWrap, setMainWrap] = useState([]);
-  const [translate, settranslate] = useState("26");
+  const [translate, settranslate] = useState("14");
+  const [prefix, setprefix] = useState("vw");
   const [sign, setsign] = useState("+");
   const [left, setleft] = useState("none");
-  const [right, setright] = useState("flex");
+  const [right, setright] = useState("none");
 
   const wrap1: any = [
     { img: img1, text: "iphone" },
@@ -33,13 +34,18 @@ const Hero_1 = () => {
 
   const moveright = () => {
     switch (translate) {
-      case "26":
-        settranslate("6");
+      case "14":
+        setprefix("px");
+        settranslate("0");
         break;
-      case "6":
+      case "0":
         setsign("-");
-        settranslate("15");
+        setprefix("px");
+        settranslate("150");
         break;
+      // case "150":
+      //   settranslate("320");
+      //   break;
 
       default:
         break;
@@ -47,13 +53,18 @@ const Hero_1 = () => {
   };
   const moveleft = () => {
     switch (translate) {
-      case "15":
+      // case "320":
+      //   settranslate("150");
+      //   break;
+      case "150":
         setsign("+");
-        settranslate("6");
+        setprefix("px");
+        settranslate("0");
         break;
-      case "6":
+      case "0":
         setsign("+");
-        settranslate("26");
+        setprefix("vw");
+        settranslate("14");
         break;
 
       default:
@@ -67,17 +78,17 @@ const Hero_1 = () => {
   };
 
   const showctn = () => {
-    translate == "15" ? setright("none") : setright("flex");
+    translate == "150" ? setright("none") : setright("flex");
     // translate < 20 ? settranslate(20) : null;
 
-    translate == "26" ? setleft("none") : setleft("flex");
+    translate == "14" ? setleft("none") : setleft("flex");
   };
 
   useEffect(() => {
-    translate == "15" ? setright("none") : setright("flex");
+    translate == "150" ? setright("none") : setright("flex");
     // translate < 20 ? settranslate(20) : null;
 
-    translate == "26" ? setleft("none") : setleft("flex");
+    translate == "14" ? setleft("none") : setleft("flex");
   }, [translate]);
 
   useEffect(() => {
@@ -104,14 +115,14 @@ const Hero_1 = () => {
                   />
                 </div>
 
-                <h3>{e.text}</h3>
+                <p className="text-[12px]">{e.text}</p>
               </div>
             );
           })}
         </div>
         <div
           className="store_hero1_wrap "
-          style={{ translate: `calc(${sign}${translate}vw) 0px` }}
+          style={{ translate: `calc(${sign}${translate}${prefix}) 0px` }}
         >
           {MainWrap.map((e: any, index: any) => {
             return (
@@ -124,7 +135,7 @@ const Hero_1 = () => {
                   />
                 </div>
 
-                <h3>{e.text}</h3>
+                <p>{e.text}</p>
               </div>
             );
           })}

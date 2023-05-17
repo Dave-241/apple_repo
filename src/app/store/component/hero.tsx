@@ -4,7 +4,7 @@ import img from "../../../../public/store/hero.jpg";
 const Hero = () => {
   return (
     <>
-      <div className="w[100] h-[auto] flex justify-center  bg-[#F5F5F7] py-[50px]">
+      <div className="w[100] h-[auto] flex justify-center  bg-[#F5F5F7] py-[50px] sm:py-[30px]">
         <div className="w-[70%] h-auto flex justify-between items-center sm:flex-col sm:w-[90%] sm:items-start sm:gap-[20px]">
           <h1 className="w-[70%] sm:text-[30px] sm:w-full text-[gray] text-[40px] font-[700]">
             <span className="text-black">Store.</span> The best way to boy the

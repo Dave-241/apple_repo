@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../header";
 import Hero from "./component/hero";
 import Hero_1 from "./component/hero1";
+import Hero_2 from "./component/hero2";
 
 const Awesome = () => {
   const [desktop_ex, setdesktop_ex] = useState("");
@@ -61,6 +62,7 @@ const Awesome = () => {
       </div>
       <Hero />
       <Hero_1 />
+      <Hero_2 />
     </>
   );
 };
