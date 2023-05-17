@@ -7,13 +7,13 @@
   justify-content: center; */
   background-color: #f3f5f7;
   height: 500px;
-  /* -ms-overflow-style: none; */
+  -ms-overflow-style: none;
 }
 
-/* .store_hero3_all_wrap::-webkit-scrollbar {
+.store_hero3_all_wrap::-webkit-scrollbar {
   display: none;
   width: 0 !important;
-} */
+}
 .store_hero3_wrap {
   display: flex;
   height: auto;
@@ -134,7 +134,7 @@
     height: 500px;
   }
   .store_hero3_main_col {
-    width: 350px;
+    width: 320px;
     height: 500px;
     margin-right: 20px;
     background-size: cover;
@@ -144,7 +144,7 @@
 
   .store_hero3_parent_col {
     height: 500px;
-    width: 350px;
+    width: 320px;
     margin-right: 20px;
   }
   .store_hero3_right {
