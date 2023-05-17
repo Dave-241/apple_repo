@@ -7,7 +7,7 @@ import img4 from "../../../../public/store/store_hero3_4.png";
 
 // import img10 from "../../../../public/store/store_hero1_10.png";
 
-const Hero_ = () => {
+const Hero_4 = () => {
   const [MainWrap, setMainWrap] = useState([]);
   const [translate, settranslate] = useState("14");
   const [prefix, setprefix] = useState("vw");
@@ -105,55 +105,19 @@ const Hero_ = () => {
     <>
       <div className="w-full py-[20px] sm:py-[10px] flex justify-center  bg-[#F3F5F7] text-[30px] sm:text-[25px] font-[700] pt-[80px] ">
         <p className="text-[gray] sm:w-[90%]  w-[70%]">
-          <span className="text-black">Help is here.</span>Whenever and however
-          you need it.{" "}
+          <span className="text-black">The Apple Store difference. </span>Even
+          more reasons to shop with us.{" "}
         </p>
       </div>
       {/*  */}
       {/* excerpt heading for the second hero section */}
       {/*  */}
       <div
-        className="store_hero3_all_wrap "
+        className="store_hero4_all_wrap "
         onMouseMove={showctn}
         onMouseLeave={hidectn}
       >
-        <div className="mob_store_hero3_wrap ">
-          <div className="store_hero3_main_col store_hero3_img1 ">
-            <div className="store_hero3 flex flex-col gap-[10px] p-[30px] font-[700]">
-              <p className="text-[12px]">APPLE SPECIALIST</p>
-              <h1 className="text-[25px]">
-                Shop one on one with a <br /> Specialist. Online or in a store.
-              </h1>
-            </div>
-          </div>
-          {/*  */}
-          <div className="store_hero3_main_col store_hero3_img2">
-            <div className="store_hero3 flex flex-col gap-[10px] p-[30px] font-[700]">
-              <p className="text-[15px] text-[darkred]">NEW</p>
-              <h1 className="text-[25px] text-white">
-                Shop with a specialist <br /> over video.
-              </h1>
-              <p className="text-white">
-                Choose your next iPhone <br /> in a guided, one-way <br /> video
-                session
-              </p>
-            </div>
-          </div>
-
-          {/*  */}
-          <div className=" store_hero3_parent_col">
-            <div className="store_hero3_child_col store_hero3_img3  ">
-              <p className="p-[20px] text-[22px] font-[700]">
-                Get to know your new device <br /> with a free personal session
-              </p>
-            </div>
-            <div className="store_hero3_child_col store_hero3_img4">
-              <p className="p-[20px] text-[22px] font-[700]">
-                Get expert service <br /> and support at the <br /> Genius Bar.
-              </p>
-            </div>
-          </div>
-        </div>
+        <div className="mob_store_hero3_wrap "></div>
 
         {/* this is for the desktop version  */}
         {/*  */}
@@ -168,41 +132,15 @@ const Hero_ = () => {
             translate: `calc(${sign}${translate}${prefix}) 0px`,
           }}
         >
-          <div className="store_hero3_main_col store_hero3_img1 ">
-            <div className="store_hero3 flex flex-col gap-[10px] p-[30px] font-[700]">
-              <p className="text-[12px]">APPLE SPECIALIST</p>
-              <h1 className="text-[25px]">
-                Shop one on one with a <br /> Specialist. Online or in a store.
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-truck icons"></i>
+              <h1 className="">
+                Shop one on one with a <br /> Specialist. Online or store.
               </h1>
             </div>
           </div>
           {/*  */}
-          <div className="store_hero3_main_col store_hero3_img2">
-            <div className="store_hero3 flex flex-col gap-[10px] p-[30px] font-[700]">
-              <p className="text-[15px] text-[darkred]">NEW</p>
-              <h1 className="text-[25px] text-white">
-                Shop with a specialist <br /> over video.
-              </h1>
-              <p className="text-white">
-                Choose your next iPhone <br /> in a guided, one-way <br /> video
-                session
-              </p>
-            </div>
-          </div>
-
-          {/*  */}
-          <div className=" store_hero3_parent_col">
-            <div className="store_hero3_child_col store_hero3_img3  ">
-              <p className="p-[20px] text-[22px] font-[700]">
-                Get to know your new device <br /> with a free personal session
-              </p>
-            </div>
-            <div className="store_hero3_child_col store_hero3_img4">
-              <p className="p-[20px] text-[22px] font-[700]">
-                Get expert service <br /> and support at the <br /> Genius Bar.
-              </p>
-            </div>
-          </div>
         </div>
 
         <div className="store_hero2_left_wrap" style={{ display: left }}>
@@ -220,4 +158,4 @@ const Hero_ = () => {
   );
 };
 
-export default Hero_;
+export default Hero_4;

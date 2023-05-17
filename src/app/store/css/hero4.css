@@ -1,0 +1,108 @@
+.store_hero4_all_wrap {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  background-color: #f3f5f7;
+  height: 500px;
+  -ms-overflow-style: none;
+}
+
+.store_hero4_all_wrap::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+.store_hero4_wrap {
+  display: flex;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s ease;
+  gap: 30px;
+}
+
+.store_hero4_main_col {
+  width: 300px;
+  height: 250px;
+  border-radius: 18px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  transition: 1s ease;
+  font-size: 24px;
+}
+.store_hero4 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+  width: 80%;
+  border: 1px solid;
+  justify-content: center;
+}
+
+.icons {
+  font-size: 50px;
+}
+
+.box1 {
+  color: #68cc45;
+}
+.box2 {
+  color: #ac39ff;
+}
+.box3 {
+  color: #007aff;
+}
+
+.store_hero4_main_col:hover {
+  transform: scale(1.05);
+}
+
+.mob_store_hero4_wrap {
+  display: none;
+}
+
+/* just know that the defalut of it is -401 */
+
+@media screen and (max-width: 830px) {
+  .mob_store_hero4_all_wrap {
+    height: 500px;
+  }
+  .store_hero4_main_col {
+    width: 350px;
+    height: 500px;
+    margin-right: 20px;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .store_hero3_right {
+    display: none;
+  }
+  .store_hero3_left {
+    display: none;
+  }
+
+  .mob_store_hero4_wrap {
+    translate: 5vw 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: auto;
+    transition: 1s ease;
+    gap: 0;
+  }
+
+  .store_hero4_all_wrap {
+    overflow-x: scroll;
+  }
+  .store_hero4_wrap {
+    display: none;
+  }
+}

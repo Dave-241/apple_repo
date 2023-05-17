@@ -189,7 +189,7 @@ const Hero_2 = () => {
     <>
       <div className="w-full py-[20px] sm:py-[10px] flex justify-center  bg-[#F3F5F7] text-[30px] sm:text-[25px] font-[700] pt-[80px] ">
         <p className="text-[gray] sm:w-[90%]  w-[70%]">
-          <span className="text-black">The latest.</span> Take a look at what's
+          <span className="text-black">The latest.</span> Take a look at whats
           new, right now.{" "}
         </p>
       </div>

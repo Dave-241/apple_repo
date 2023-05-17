@@ -6,6 +6,7 @@ import Hero from "./component/hero";
 import Hero_1 from "./component/hero1";
 import Hero_2 from "./component/hero2";
 import Hero_3 from "./component/hero3";
+import Hero_4 from "./component/hero4";
 
 const Awesome = () => {
   const [desktop_ex, setdesktop_ex] = useState("");
@@ -65,6 +66,7 @@ const Awesome = () => {
       <Hero_1 />
       <Hero_2 />
       <Hero_3 />
+      <Hero_4 />
     </>
   );
 };
