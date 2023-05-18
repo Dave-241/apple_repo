@@ -288,12 +288,12 @@ const Footer = () => {
           <div className="hidden sm:flex w-[100%] h-[auto] flex-col capitalize text-[12px] py-[10px] text-[#484848]">
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt1}
                 style={{ transition: "2s ease" }}
               >
                 <p>shop and learn</p>{" "}
-                <p className="text-[25px]">{!display1.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display1.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display1.map((e, index) => {
@@ -311,12 +311,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt2}
                 style={{ transition: "2s ease" }}
               >
                 <p>Apple Wallet</p>{" "}
-                <p className="text-[25px]">{!display2.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display2.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display2.map((e, index) => {
@@ -334,12 +334,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt3}
                 style={{ transition: "2s ease" }}
               >
                 <p>Account</p>{" "}
-                <p className="text-[25px]">{!display3.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display3.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display3.map((e, index) => {
@@ -357,12 +357,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt4}
                 style={{ transition: "2s ease" }}
               >
                 <p>Entertainment</p>{" "}
-                <p className="text-[25px]">{!display4.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display4.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display4.map((e, index) => {
@@ -380,12 +380,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt5}
                 style={{ transition: "2s ease" }}
               >
                 <p>Apple Store</p>{" "}
-                <p className="text-[25px]">{!display5.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display5.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display5.map((e, index) => {
@@ -403,12 +403,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt6}
                 style={{ transition: "2s ease" }}
               >
                 <p>For Business</p>{" "}
-                <p className="text-[25px]">{!display6.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display6.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display6.map((e, index) => {
@@ -426,12 +426,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt7}
                 style={{ transition: "2s ease" }}
               >
                 <p>For Education</p>{" "}
-                <p className="text-[25px]">{!display7.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display7.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display7.map((e, index) => {
@@ -449,12 +449,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt8}
                 style={{ transition: "2s ease" }}
               >
                 <p>For Healthcare</p>{" "}
-                <p className="text-[25px]">{!display8.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display8.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display8.map((e, index) => {
@@ -472,12 +472,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt9}
                 style={{ transition: "2s ease" }}
               >
                 <p>For Government </p>
-                <p className="text-[25px]">{!display9.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display9.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display9.map((e, index) => {
@@ -495,12 +495,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt10}
                 style={{ transition: "2s ease" }}
               >
                 <p>Apple Values </p>
-                <p className="text-[25px]">{!display10.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display10.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display10.map((e, index) => {
@@ -518,12 +518,12 @@ const Footer = () => {
             </div>
             <div className="w-[100%] border-b-2 border-[#878787] py-[0px]  flex   flex-col">
               <div
-                className="w-[100%]  flex justify-between items-center"
+                className="w-[100%]   flex justify-between items-center"
                 onClick={showOPpt11}
                 style={{ transition: "2s ease" }}
               >
                 <p>About Apple </p>
-                <p className="text-[25px]">{!display11.length ? "+" : "-"}</p>
+                <p className="text-[20px]">{!display11.length ? "+" : "-"}</p>
               </div>
               <div className="">
                 {display11.map((e, index) => {

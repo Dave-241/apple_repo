@@ -9,6 +9,8 @@ import Hero_3 from "./component/hero3";
 import Hero_4 from "./component/hero4";
 import Hero_5 from "./component/hero5";
 import Hero_6 from "./component/hero6";
+import Footer_exc from "./component/footer_excerpt";
+import Footer from "../footer";
 
 const Awesome = () => {
   const [desktop_ex, setdesktop_ex] = useState("");
@@ -71,6 +73,8 @@ const Awesome = () => {
       <Hero_4 />
       <Hero_5 />
       <Hero_6 />
+      <Footer_exc />
+      <Footer />
     </>
   );
 };

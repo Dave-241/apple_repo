@@ -8,6 +8,7 @@ import "./css/hero1.css";
 import "./css/hero2.css";
 import "./css/hero3.css";
 import "./css/hero4.css";
+import "./css/footer_exc.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
