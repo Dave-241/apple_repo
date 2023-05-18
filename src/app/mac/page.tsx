@@ -7,6 +7,7 @@ import Excerpt from "./components/excerpt";
 import Hero_1 from "./components/hero1";
 import Hero_2 from "./components/hero2";
 import Hero_3 from "./components/hero3";
+import System_display from "./components/system_display";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero_1 />
       <Hero_2 />
       <Hero_3 />
+      <System_display />
     </>
   );
 }
