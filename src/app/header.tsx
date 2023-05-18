@@ -442,7 +442,8 @@ const Header = (props: any) => {
             >
               Store
             </Link>
-            <p
+            <Link
+              href="/mac"
               className="nav_items"
               onMouseMove={() => {
                 mac();
@@ -450,7 +451,7 @@ const Header = (props: any) => {
               }}
             >
               Mac
-            </p>
+            </Link>
             <p
               className="nav_items"
               onMouseMove={() => {

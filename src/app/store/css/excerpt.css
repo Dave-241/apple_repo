@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.store_excerpt {
+  background-color: lightgray;
+}
+
 @keyframes example {
   0% {
     color: white;

@@ -1,31 +1,4 @@
-.store_hero1_all_wrap {
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
-  background-color: white;
-  -ms-overflow-style: none;
-}
-
-.store_hero1_all_wrap::-webkit-scrollbar {
-  display: none;
-  width: 0 !important;
-}
-.store_hero1_wrap {
-  display: flex;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  transition: 1s ease;
-  align-items: center;
-  gap: 2vw;
-}
-
-.store_hero1_main_col {
+.mac_hero1_main_col {
   width: 150px;
   flex-direction: column;
   display: flex;
@@ -37,48 +10,45 @@
   color: black;
 }
 
-.store_hero1_img {
-  width: 100%;
-  height: 60%;
-}
-
-.mob_store_hero1_wrap {
-  display: none;
-}
-
 /* just know that the defalut of it is -401 */
 
 @media screen and (max-width: 830px) {
-  .store_hero1_main_col {
-    width: 120px;
+  .mac_hero1_all_wrap {
+    height: 120px;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: white;
+    -ms-overflow-style: none;
+  }
+  .mac_hero1_all_wrap::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+  }
+
+  .mac_hero1_main_col {
+    width: 110px;
     height: 120px;
     display: flex;
   }
 
-  .store_hero1_main_col:hover {
+  .mac_hero1_main_col:hover {
     color: blue;
   }
 
-  .store_hero1_all_wrap {
-    height: 120px;
-  }
-  .mob_store_hero1_wrap {
+  .mob_mac_hero1_wrap {
     translate: 2vw 0;
     position: absolute;
     top: 0;
     height: 150px;
     left: 0;
-  }
-
-  .store_hero1_all_wrap {
-    overflow-x: scroll;
-  }
-
-  .mob_store_hero1_wrap {
     display: flex;
     height: auto;
-
     transition: 1s ease;
-    gap: 2vw;
+  }
+
+  .mac_hero1_img {
+    width: 100%;
+    height: 60%;
   }
 }

@@ -2,31 +2,34 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import img1 from "../../../../public/store/store_hero1_1.png";
-import img2 from "../../../../public/store/store_hero1_2.png";
-import img3 from "../../../../public/store/store_hero1_3.png";
-import img4 from "../../../../public/store/store_hero1_4.png";
-import img5 from "../../../../public/store/store_hero1_5.png";
-import img6 from "../../../../public/store/store_hero1_6.png";
-import img7 from "../../../../public/store/store_hero1_7.png";
-import img8 from "../../../../public/store/store_hero1_8.png";
-import img9 from "../../../../public/store/store_hero1_9.png";
-import img10 from "../../../../public/store/store_hero1_10.png";
+import img1 from "../../../../public/mac/mac_subheader_1.svg";
+import img2 from "../../../../public/mac/mac_subheader_2.svg";
+import img3 from "../../../../public/mac/mac_subheader_3.svg";
+import img4 from "../../../../public/mac/mac_subheader_4.svg";
+import img5 from "../../../../public/mac/mac_subheader_5.svg";
+import img6 from "../../../../public/mac/mac_subheader_6.svg";
+import img7 from "../../../../public/mac/mac_subheader_8.svg";
+import img8 from "../../../../public/mac/mac_subheader_9.svg";
+import img9 from "../../../../public/mac/mac_subheader_11.svg";
+import img11 from "../../../../public/mac/mac_subheader_10.svg";
+import img10 from "../../../../public/mac/mac_subheader_7.svg";
 
 const Subheader = () => {
   const [MainWrap, setMainWrap] = useState([]);
 
   const wrap1: any = [
-    { img: img1, text: "iphone" },
-    { img: img2, text: "ipad", more: "NEW" },
-    { img: img3, text: "apple watch" },
-    { img: img4, text: "airpods", more: "NEW" },
-    { img: img5, text: "airtags" },
-    { img: img6, text: "apple TV 4k" },
-    { img: img10, text: "mac" },
-    { img: img7, text: "homePod" },
+    { img: img1, text: "MackBook Air" },
+
+    { img: img3, text: 'Mac 24"' },
+    { img: img4, text: "Mac Mini", more: "NEW" },
+    { img: img5, text: "Mac Studio" },
+    { img: img6, text: "Mac Pro" },
+    { img: img10, text: "Compare" },
+    { img: img7, text: "Display" },
+    { img: img2, text: "MackBook Pro", more: "NEW" },
     { img: img8, text: "Accessories" },
-    { img: img9, text: "apple gift card" },
+    { img: img11, text: "ventura" },
+    { img: img9, text: "Shop Mac" },
   ];
 
   useEffect(() => {
@@ -36,12 +39,13 @@ const Subheader = () => {
 
   return (
     <>
-      <div className="store_hero1_all_wrap hidden sm:block mt-[60px]">
-        <div className="mob_store_hero1_wrap ">
+      {/* for mobile screens */}
+      <div className="mac_hero1_all_wrap hidden sm:block mt-[40px]">
+        <div className="mob_mac_hero1_wrap ">
           {MainWrap.map((e: any, index: any) => {
             return (
-              <div className="store_hero1_main_col " key={index}>
-                <div className="store_hero1_img">
+              <div className="mac_hero1_main_col " key={index}>
+                <div className="mac_hero1_img">
                   <Image
                     src={e.img}
                     alt={e.img}
@@ -50,7 +54,23 @@ const Subheader = () => {
                 </div>
 
                 <p className="text-[12px]">{e.text}</p>
-                <p className="text-[darkorange] text-[12px]">{e.more}</p>
+                <p className="text-[darkorange] text-[10px]">{e.more}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* for desktop screens */}
+      {/*  */}
+      {/*  */}
+      <div className="w-full flex justify-center items-center h-auto mt-[40px] sm:hidden py-[15px]">
+        <div className="w-[80%] h-auto flex justify-between flex-wrap">
+          {MainWrap.map((e: any) => {
+            return (
+              <div className=" flex flex-col items-center hover:text-blue-500 cursor">
+                <Image src={e.img} alt="images" />
+                <p className="text-[12px]">{e.text}</p>
               </div>
             );
           })}

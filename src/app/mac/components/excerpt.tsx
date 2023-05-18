@@ -1,18 +1,6 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
-import Header from "../header";
-import Hero from "./component/hero";
-import Hero_1 from "./component/hero1";
-import Hero_2 from "./component/hero2";
-import Hero_3 from "./component/hero3";
-import Hero_4 from "./component/hero4";
-import Hero_5 from "./component/hero5";
-import Hero_6 from "./component/hero6";
-import Footer_exc from "./component/footer_excerpt";
-import Footer from "../footer";
 
-const Awesome = () => {
+const Excerpt = () => {
   const [desktop_ex, setdesktop_ex] = useState("");
   const [display, setdisplay] = useState("0");
   const [mob_ex, setmob_ex] = useState("");
@@ -37,9 +25,8 @@ const Awesome = () => {
   }, []);
   return (
     <>
-      <Header navbg="#F3F5F7" navtext="black" opacity="0.5" />
       <div
-        className="store_excerpt w-[100%] h-[auto] text-center    mt-[40px]  text-[13px] first-letter "
+        className="store_excerpt store_excerpt w-[100%] h-[auto] text-center   text-[13px] first-letter "
         style={{ padding: display }}
       >
         <p className="sm:hidden capitalize text-center w-[70%]">
@@ -49,7 +36,9 @@ const Awesome = () => {
             {mob_ctn}
             <i
               className=" bi bi-chevron-right"
-              style={{ display: mob_ctn.length > 1 ? "inline-block" : "none" }}
+              style={{
+                display: mob_ctn.length > 1 ? "inline-block" : "none",
+              }}
             ></i>{" "}
           </span>
         </p>
@@ -61,22 +50,15 @@ const Awesome = () => {
             {mob_ctn}
             <i
               className=" bi bi-chevron-right"
-              style={{ display: mob_ctn.length > 1 ? "inline-block" : "none" }}
+              style={{
+                display: mob_ctn.length > 1 ? "inline-block" : "none",
+              }}
             ></i>{" "}
           </span>
         </p>
       </div>
-      <Hero />
-      <Hero_1 />
-      <Hero_2 />
-      <Hero_3 />
-      <Hero_4 />
-      <Hero_5 />
-      <Hero_6 />
-      <Footer_exc />
-      <Footer />
     </>
   );
 };
 
-export default Awesome;
+export default Excerpt;

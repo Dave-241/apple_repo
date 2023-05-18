@@ -5,6 +5,8 @@ import "../globals_css/global.css";
 import "../globals_css/header.css";
 import "../store/css/excerpt.css";
 import "./css/subheader.css";
+import "./css/hero2.css";
+import "./css/hero3.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative bg-[#F3F5F7]">{children}</body>
+      <body className="relative bg-[white]">{children}</body>
     </html>
   );
 }

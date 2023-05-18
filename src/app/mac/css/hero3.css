@@ -1,0 +1,13 @@
+.mac_hero3_bg {
+  background-image: url(../../../../public/mac/mac_hero3.jpg);
+  /* background-size: 70%; */
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 830px) {
+  .mac_hero3_bg {
+    background-size: contain;
+  }
+}
