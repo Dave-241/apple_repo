@@ -129,7 +129,7 @@ const Hero_ = () => {
           {/*  */}
           <div className="store_hero3_main_col store_hero3_img2">
             <div className="store_hero3 flex flex-col gap-[10px] p-[30px] font-[700]">
-              <p className="text-[15px] text-[darkred]">NEW</p>
+              <p className="text-[15px] text-[darkorange]">NEW</p>
               <h1 className="text-[25px] text-white">
                 Shop with a specialist over video.
               </h1>
@@ -179,7 +179,7 @@ const Hero_ = () => {
           {/*  */}
           <div className="store_hero3_main_col store_hero3_img2">
             <div className="store_hero3 flex flex-col gap-[10px] p-[30px] font-[700]">
-              <p className="text-[15px] text-[darkred]">NEW</p>
+              <p className="text-[15px] text-[darkorange]">NEW</p>
               <h1 className="text-[25px] text-white">
                 Shop with a specialist <br /> over video.
               </h1>

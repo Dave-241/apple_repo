@@ -120,6 +120,15 @@ const Hero_4 = () => {
         <div className="mob_store_hero3_wrap ">
           <div className="store_hero4_main_col">
             <div className="store_hero4 ">
+              <i className="bi bi-apple icons box4"></i>
+              <h1 className="">
+                <span className="box4">Customize </span>
+                your Mac and create your own style of Apple Watch.
+              </h1>
+            </div>
+          </div>
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
               <i className="bi bi-truck icons box1"></i>
               <h1 className="">
                 Enjoy <span className="box1">two-hour delivery</span> from an
@@ -187,6 +196,15 @@ const Hero_4 = () => {
             translate: `calc(${sign}${translate}${prefix}) 0px`,
           }}
         >
+          <div className="store_hero4_main_col">
+            <div className="store_hero4 ">
+              <i className="bi bi-apple icons box4"></i>
+              <h1 className="">
+                <span className="box4">Customize </span>
+                your Mac and create your own style of Apple Watch.
+              </h1>
+            </div>
+          </div>
           <div className="store_hero4_main_col">
             <div className="store_hero4 ">
               <i className="bi bi-truck icons box1"></i>
