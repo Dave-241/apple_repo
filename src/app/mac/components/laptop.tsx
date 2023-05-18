@@ -102,90 +102,6 @@ const Laptop = () => {
       first: [
         {
           img: img1,
-          colors: ["black", "orange", "gray", "lightblue"],
-          heading: "MackBook Air ",
-          subheading: "M2 chip",
-          from: "From $1199",
-          buy: "Buy",
-          learnMore: "learn more",
-        },
-      ],
-      second: [
-        {
-          retinaDisplay: '13.3" ',
-          retinaText: "Liquid Retina display",
-        },
-      ],
-      third: [
-        {
-          chip: [chipimg1],
-          chipText: "Apple M2 chip",
-        },
-      ],
-      fourth: [
-        {
-          core1: "8-core",
-          core1Text: "CPU",
-        },
-      ],
-      fifth: [
-        {
-          subcore: "Up to",
-          core2: "10-core",
-          core2Text: "GPU",
-        },
-      ],
-
-      sixth: [
-        {
-          memoryimg: [memoryimg],
-          memoryTxt: "Up to 24GB unified memory",
-        },
-      ],
-
-      seventh: [
-        {
-          storage: "2TB",
-          storageTxt: "Maximum configurable storagemac",
-        },
-      ],
-
-      eight: [
-        {
-          batteryimg: [batteryimg],
-          batteryTxt: "Up to 18 hours battery life",
-        },
-      ],
-      ninth: [
-        {
-          cameraimg: [cameraimg],
-          cameratxt: "1080p FaceTime HD camera",
-        },
-      ],
-      tenth: [
-        {
-          speakerimg: [speakerimg],
-          speakertxt1: "Three-mic array",
-          speakertxt2: "Four-speaker sound system with Spatial Audio",
-        },
-      ],
-      eleven: [
-        {
-          weight: "2.7lb",
-          weighttxt: "Weight",
-        },
-      ],
-      twelve: [
-        {
-          touchidimg: [touchidimg1],
-          touchidtxt: "Touch ID",
-        },
-      ],
-    },
-    {
-      first: [
-        {
-          img: img1,
           colors: ["black", "lightgrey"],
           heading: 'MacBook Pro 13"',
           subheading: "M2 chip ",
@@ -263,6 +179,90 @@ const Laptop = () => {
         {
           touchidimg: [touchidimg2],
           touchidtxt: "Touch Bar and Touch ID",
+        },
+      ],
+    },
+    {
+      first: [
+        {
+          img: img1,
+          colors: ["black", "orange", "gray", "lightblue"],
+          heading: "MackBook Air ",
+          subheading: "M2 chip",
+          from: "From $1199",
+          buy: "Buy",
+          learnMore: "learn more",
+        },
+      ],
+      second: [
+        {
+          retinaDisplay: '13.3" ',
+          retinaText: "Liquid Retina display",
+        },
+      ],
+      third: [
+        {
+          chip: [chipimg1],
+          chipText: "Apple M2 chip",
+        },
+      ],
+      fourth: [
+        {
+          core1: "8-core",
+          core1Text: "CPU",
+        },
+      ],
+      fifth: [
+        {
+          subcore: "Up to",
+          core2: "10-core",
+          core2Text: "GPU",
+        },
+      ],
+
+      sixth: [
+        {
+          memoryimg: [memoryimg],
+          memoryTxt: "Up to 24GB unified memory",
+        },
+      ],
+
+      seventh: [
+        {
+          storage: "2TB",
+          storageTxt: "Maximum configurable storagemac",
+        },
+      ],
+
+      eight: [
+        {
+          batteryimg: [batteryimg],
+          batteryTxt: "Up to 18 hours battery life",
+        },
+      ],
+      ninth: [
+        {
+          cameraimg: [cameraimg],
+          cameratxt: "1080p FaceTime HD camera",
+        },
+      ],
+      tenth: [
+        {
+          speakerimg: [speakerimg],
+          speakertxt1: "Three-mic array",
+          speakertxt2: "Four-speaker sound system with Spatial Audio",
+        },
+      ],
+      eleven: [
+        {
+          weight: "2.7lb",
+          weighttxt: "Weight",
+        },
+      ],
+      twelve: [
+        {
+          touchidimg: [touchidimg1],
+          touchidtxt: "Touch ID",
         },
       ],
     },
