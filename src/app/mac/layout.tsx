@@ -7,6 +7,7 @@ import "../store/css/excerpt.css";
 import "./css/subheader.css";
 import "./css/hero2.css";
 import "./css/hero3.css";
+import "./css/hero4.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

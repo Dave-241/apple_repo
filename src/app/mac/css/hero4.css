@@ -1,0 +1,13 @@
+.hero4_bg {
+  background-image: url(../../../../public/mac/mac_hero4_des.jpg);
+  background-size: cover;
+  background-position: right center;
+}
+
+@media screen and (max-width: 830px) {
+  .hero4_bg {
+    background-image: url(../../../../public/mac/mac_hero4_mob.jpg);
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
