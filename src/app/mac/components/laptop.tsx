@@ -364,7 +364,7 @@ const Laptop = () => {
           {myitems.map((e: any, index: any) => {
             return (
               <div
-                className=" w-[250px] sm:w-[47%]  border-red-500 border-5 flex flex-col gap-[20px] items-center flex-wrap "
+                className=" w-[250px] sm:w-[47%]  border-red-500 border-5 flex flex-col gap-[20px] sm:gap-[0px] items-center flex-wrap "
                 key={index}
               >
                 {e.first.map((i: any, index: any) => {
