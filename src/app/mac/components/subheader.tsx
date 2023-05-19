@@ -66,9 +66,12 @@ const Subheader = () => {
       {/*  */}
       <div className="w-full flex justify-center items-center h-auto mt-[40px] sm:hidden py-[15px]">
         <div className="w-[80%] h-auto flex justify-between flex-wrap">
-          {MainWrap.map((e: any) => {
+          {MainWrap.map((e: any, index: any) => {
             return (
-              <div className=" flex flex-col items-center hover:text-blue-500 cursor">
+              <div
+                className=" flex flex-col items-center hover:text-blue-500 cursor"
+                key={index}
+              >
                 <Image src={e.img} alt="images" />
                 <p className="text-[12px]">{e.text}</p>
               </div>
