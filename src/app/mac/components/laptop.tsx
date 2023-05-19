@@ -360,11 +360,11 @@ const Laptop = () => {
   return (
     <>
       <div className="w-full justify-center flex h-auto bg-[#F5F5F7]">
-        <div className="flex flex-wrap sm:gap-[6%] gap-[10px]">
+        <div className="flex flex-wrap sm:gap-[0] sm:justify-around w-[80%] gap-[20px] justify-center ">
           {myitems.map((e: any, index: any) => {
             return (
               <div
-                className=" w-[250px] sm:w-[47%]  border-red-500 border-5 flex flex-col gap-[20px] sm:gap-[0px] items-center flex-wrap "
+                className=" w-[250px] sm:w-[47%]  border-b-2  border-gray-300 flex flex-col gap-[20px] sm:gap-[0px] items-center flex-wrap "
                 key={index}
               >
                 {e.first.map((i: any, index: any) => {

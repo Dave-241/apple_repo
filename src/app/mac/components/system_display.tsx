@@ -4,14 +4,12 @@ import Laptop from "./laptop";
 
 const System_display = () => {
   const [desktop, setdesktop] = useState(false);
-  const [laptop, setlaptop] = useState(true);
+  const [laptop, setlaptop] = useState(false);
 
   const showlaptop = () => {
-    setdesktop(false);
     setlaptop(true);
   };
   const showdesktop = () => {
-    setdesktop(true);
     setlaptop(false);
   };
 
@@ -26,8 +24,8 @@ const System_display = () => {
 
       {/* now the main differentiation */}
       {/*  */}
-      <div className="w-full flex justify-center py-[30px] bg-[#F5F5F7]">
-        <div className="flex gap-[50px] w-auto h-auto border-b-[2px] ">
+      <div className="w-full flex flex-col justify-center items-center py-[30px] bg-[#F5F5F7] ">
+        <div className="flex gap-[50px] w-[50%] justify-center h-auto border-b-[2px] ">
           <p
             className="pb-[12px] text-[17px] cursor hover:text-black text-gray-600"
             style={{ borderBottom: laptop ? "1px solid black" : "" }}
@@ -37,17 +35,18 @@ const System_display = () => {
           </p>
           <p
             className="pb-[12px] text-[17px] cursor hover:text-black text-gray-600"
-            style={{ borderBottom: desktop ? "1px solid black" : "" }}
+            style={{ borderBottom: !laptop ? "1px solid black" : "" }}
             onClick={showdesktop}
           >
             Desktop
           </p>
         </div>
       </div>
+      <div className="w-full flex flex-col justify-center items-center bg-[#F5F5F7] min-h-[500px]">
+        {laptop ? <Laptop /> : <Desktop />}
+      </div>
 
       {/* check if destop or laptop */}
-      {desktop ? <Desktop /> : null}
-      {laptop ? <Laptop /> : null}
 
       <div className="w-full sm:w-[100%] sm:px-[5%] sm:justify-between py-[60px] bg-[#F5F5F7] flex justify-center items-center gap-[60px] sm:gap-0 ">
         <p className="text-[25px] sm:text-[17px] text-blue-700 hover:underline hover:underline-offset-4 cursor">
