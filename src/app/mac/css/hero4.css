@@ -28,3 +28,16 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.hero7_1 {
+  background-image: url(../../../../public/mac/mac_hero7_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero7_2 {
+  background-image: url(../../../../public/mac/mac_hero7_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
