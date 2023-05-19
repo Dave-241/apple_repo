@@ -364,20 +364,23 @@ const Laptop = () => {
           {myitems.map((e: any, index: any) => {
             return (
               <div
-                className=" w-[250px] sm:w-[47%]  border-red-500 border-5 flex flex-col gap-[40px] items-center flex-wrap "
+                className=" w-[250px] sm:w-[47%]  border-red-500 border-5 flex flex-col gap-[20px] items-center flex-wrap "
                 key={index}
               >
-                {e.first.map((i: any) => {
+                {e.first.map((i: any, index: any) => {
                   return (
-                    <div className=" w-full flex-col flex justify-center gap-[10px] border-b-2 pb-[30px] border-gray-300 items-center  sm:pt-[20px]">
+                    <div
+                      key={index}
+                      className=" h-[500px]  w-full flex-col flex justify-center gap-[10px] border-b-2 pb-[30px] border-gray-300 items-center  sm:pt-[20px]"
+                    >
                       <Image
                         src={i.img}
                         alt="this "
-                        className="w-[200px] sm:w-[300px]"
+                        className="w-[200px]  sm:w-[300px]"
                       />
                       {/* these are for the colors of the laptops */}
 
-                      <div className="flex w-full pt-[20px]  justify-center gap-[10px]">
+                      <div className="flex w-full pt-[20px]  justify-center gap-[10px] items-center">
                         {i.colors.map((c: any) => {
                           return (
                             <div
@@ -387,11 +390,11 @@ const Laptop = () => {
                           );
                         })}
                       </div>
-                      <p className="text-[darkorange] text[17px] capitalize font-[700]">
+                      {/* <p className="text-[darkorange] text[17px] capitalize font-[700]">
                         {i.new}
-                      </p>
+                      </p> */}
                       {/* this is for the name of the laptop */}
-                      <h1 className="pt-[20px] text-[21px] font-[700] sm:text-[17px]">
+                      <h1 className="pt-[20px] text-[21px] font-[700] sm:text-[17px] text-center">
                         {i.heading}
                       </h1>
                       <h3>{i.subheading}</h3>
@@ -414,12 +417,12 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] flex flex-col gap-[3px] items-center justify-center"
                     >
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.retinaDisplay}
                       </h3>
-                      <h3 className="text-[14px] ">
+                      <h3 className="text-[14px] text-center ">
                         {s.retinaText}
                         <sup>1</sup>
                       </h3>{" "}
@@ -433,7 +436,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
                         {s.chip.map((a: any) => {
@@ -442,7 +445,7 @@ const Laptop = () => {
                           );
                         })}
                       </div>
-                      <h3 className="text-[14px] ">{s.chipText}</h3>{" "}
+                      <h3 className="text-[14px] text-center ">{s.chipText}</h3>{" "}
                     </div>
                   );
                 })}
@@ -452,7 +455,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.core1}
@@ -467,7 +470,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <h3 className="text-[14px] ">{s.subcore} </h3>
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
@@ -484,7 +487,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
                         {s.memoryimg.map((a: any) => {
@@ -505,7 +508,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.storage}
@@ -522,7 +525,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
                         {s.batteryimg.map((a: any) => {
@@ -543,7 +546,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
                         {s.cameraimg.map((a: any) => {
@@ -564,7 +567,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
                         {s.speakerimg.map((a: any) => {
@@ -588,7 +591,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.weight}
@@ -603,7 +606,7 @@ const Laptop = () => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col gap-[3px] items-center"
+                      className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
                         {s.touchidimg.map((a: any) => {
