@@ -381,9 +381,10 @@ const Laptop = () => {
                       {/* these are for the colors of the laptops */}
 
                       <div className="flex w-full pt-[20px]  justify-center gap-[10px] items-center">
-                        {i.colors.map((c: any) => {
+                        {i.colors.map((c: any, index: any) => {
                           return (
                             <div
+                              key={index}
                               className="rounded-[100%] w-[15px] h-[15px] "
                               style={{ backgroundColor: c }}
                             ></div>
@@ -439,9 +440,14 @@ const Laptop = () => {
                       className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
-                        {s.chip.map((a: any) => {
+                        {s.chip.map((a: any, index: any) => {
                           return (
-                            <Image src={a} alt="this" className="w-[50px]" />
+                            <Image
+                              src={a}
+                              alt="this"
+                              className="w-[50px]"
+                              key={index}
+                            />
                           );
                         })}
                       </div>
@@ -490,9 +496,14 @@ const Laptop = () => {
                       className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
-                        {s.memoryimg.map((a: any) => {
+                        {s.memoryimg.map((a: any, index: any) => {
                           return (
-                            <Image src={a} alt="this" className="w-[50px]" />
+                            <Image
+                              src={a}
+                              alt="this"
+                              className="w-[50px]"
+                              key={index}
+                            />
                           );
                         })}
                       </div>
@@ -528,9 +539,14 @@ const Laptop = () => {
                       className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
-                        {s.batteryimg.map((a: any) => {
+                        {s.batteryimg.map((a: any, index: any) => {
                           return (
-                            <Image src={a} alt="this" className="w-[50px]" />
+                            <Image
+                              src={a}
+                              alt="this"
+                              className="w-[50px]"
+                              key={index}
+                            />
                           );
                         })}
                       </div>
@@ -549,9 +565,14 @@ const Laptop = () => {
                       className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
-                        {s.cameraimg.map((a: any) => {
+                        {s.cameraimg.map((a: any, index: any) => {
                           return (
-                            <Image src={a} alt="this" className="w-[50px]" />
+                            <Image
+                              src={a}
+                              alt="this"
+                              className="w-[50px]"
+                              key={index}
+                            />
                           );
                         })}
                       </div>
@@ -570,9 +591,14 @@ const Laptop = () => {
                       className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
-                        {s.speakerimg.map((a: any) => {
+                        {s.speakerimg.map((a: any, index: any) => {
                           return (
-                            <Image src={a} alt="this" className="w-[50px]" />
+                            <Image
+                              src={a}
+                              alt="this"
+                              className="w-[50px]"
+                              key={index}
+                            />
                           );
                         })}
                       </div>
@@ -609,9 +635,14 @@ const Laptop = () => {
                       className=" h-[120px] justify-center flex flex-col gap-[3px] items-center"
                     >
                       <div className=" justify-center flex  ">
-                        {s.touchidimg.map((a: any) => {
+                        {s.touchidimg.map((a: any, index: any) => {
                           return (
-                            <Image src={a} alt="this" className="w-[50px]" />
+                            <Image
+                              src={a}
+                              alt="this"
+                              className="w-[50px]"
+                              key={index}
+                            />
                           );
                         })}
                       </div>
