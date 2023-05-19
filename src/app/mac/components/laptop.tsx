@@ -410,9 +410,12 @@ const Laptop = () => {
                 })}
 
                 {/* first part has finished */}
-                {e.second.map((s: any) => {
+                {e.second.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.retinaDisplay}
                       </h3>
@@ -426,9 +429,12 @@ const Laptop = () => {
 
                 {/* second has finished */}
 
-                {e.third.map((s: any) => {
+                {e.third.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <div className=" justify-center flex  ">
                         {s.chip.map((a: any) => {
                           return (
@@ -442,9 +448,12 @@ const Laptop = () => {
                 })}
 
                 {/* third has finished */}
-                {e.fourth.map((s: any) => {
+                {e.fourth.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.core1}
                       </h3>
@@ -454,9 +463,12 @@ const Laptop = () => {
                 })}
 
                 {/* fourth has finished */}
-                {e.fifth.map((s: any) => {
+                {e.fifth.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <h3 className="text-[14px] ">{s.subcore} </h3>
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.core2}
@@ -468,9 +480,12 @@ const Laptop = () => {
 
                 {/* fifth set is ending */}
 
-                {e.sixth.map((s: any) => {
+                {e.sixth.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <div className=" justify-center flex  ">
                         {s.memoryimg.map((a: any) => {
                           return (
@@ -486,9 +501,12 @@ const Laptop = () => {
                 })}
 
                 {/* sixth has finished */}
-                {e.seventh.map((s: any) => {
+                {e.seventh.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.storage}
                       </h3>
@@ -500,9 +518,12 @@ const Laptop = () => {
                 })}
 
                 {/* seventh has finished */}
-                {e.eight.map((s: any) => {
+                {e.eight.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <div className=" justify-center flex  ">
                         {s.batteryimg.map((a: any) => {
                           return (
@@ -518,9 +539,12 @@ const Laptop = () => {
                 })}
 
                 {/* eight has ended */}
-                {e.ninth.map((s: any) => {
+                {e.ninth.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <div className=" justify-center flex  ">
                         {s.cameraimg.map((a: any) => {
                           return (
@@ -536,9 +560,12 @@ const Laptop = () => {
                 })}
 
                 {/* ninth has ended */}
-                {e.tenth.map((s: any) => {
+                {e.tenth.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <div className=" justify-center flex  ">
                         {s.speakerimg.map((a: any) => {
                           return (
@@ -557,9 +584,12 @@ const Laptop = () => {
                 })}
 
                 {/* tenth has ended */}
-                {e.eleven.map((s: any) => {
+                {e.eleven.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <h3 className="text-[21px] font-[700] sm:text-[17px]">
                         {s.weight}
                       </h3>
@@ -569,9 +599,12 @@ const Laptop = () => {
                 })}
 
                 {/* 11th one has ended */}
-                {e.twelve.map((s: any) => {
+                {e.twelve.map((s: any, index: any) => {
                   return (
-                    <div className="flex flex-col gap-[3px] items-center">
+                    <div
+                      key={index}
+                      className="flex flex-col gap-[3px] items-center"
+                    >
                       <div className=" justify-center flex  ">
                         {s.touchidimg.map((a: any) => {
                           return (
