@@ -8,6 +8,7 @@ import "./css/subheader.css";
 import "./css/hero2.css";
 import "./css/hero3.css";
 import "./css/hero4.css";
+import "./css/tv1.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

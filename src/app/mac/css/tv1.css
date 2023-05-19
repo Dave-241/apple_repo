@@ -1,0 +1,14 @@
+.tv1_txt {
+  animation-name: tv1;
+  animation-duration: 2s;
+  transition: 2s ease;
+}
+
+@keyframes tv1 {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

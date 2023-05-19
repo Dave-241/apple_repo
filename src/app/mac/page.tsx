@@ -9,18 +9,20 @@ import Hero_2 from "./components/hero2";
 import Hero_3 from "./components/hero3";
 import System_display from "./components/system_display";
 import Hero4 from "./components/hero4";
+import Tv_1 from "./components/tv_1";
 
 export default function Home() {
   return (
     <>
-      <Header navbg="white" navtext="black" opacity="0.5" />
+      {/* <Header navbg="white" navtext="black" opacity="0.5" />
       <Subheader />
       <Excerpt />
       <Hero_1 />
       <Hero_2 />
       <Hero_3 />
       <System_display />
-      <Hero4 />
+      <Hero4 /> */}
+      <Tv_1 />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Desktop from "./destop";
 import Laptop from "./laptop";
+import { FadeInTransition } from "react-transitions-library/dist/transitions";
 
 const System_display = () => {
   const [desktop, setdesktop] = useState(false);
@@ -28,14 +29,20 @@ const System_display = () => {
         <div className="flex gap-[50px] w-[50%] justify-center h-auto border-b-[2px] ">
           <p
             className="pb-[12px] text-[17px] cursor hover:text-black text-gray-600"
-            style={{ borderBottom: laptop ? "1px solid black" : "" }}
+            style={{
+              borderBottom: laptop ? "1px solid black" : "",
+              color: laptop ? "black" : "rgb(75 85 99)",
+            }}
             onClick={showlaptop}
           >
             Laptop
           </p>
           <p
             className="pb-[12px] text-[17px] cursor hover:text-black text-gray-600"
-            style={{ borderBottom: !laptop ? "1px solid black" : "" }}
+            style={{
+              borderBottom: !laptop ? "1px solid black" : "",
+              color: !laptop ? "black" : "rgb(75 85 99)",
+            }}
             onClick={showdesktop}
           >
             Desktop
