@@ -14,14 +14,14 @@ import Tv_1 from "./components/tv_1";
 export default function Home() {
   return (
     <>
-      {/* <Header navbg="white" navtext="black" opacity="0.5" />
+      <Header navbg="white" navtext="black" opacity="0.5" />
       <Subheader />
       <Excerpt />
       <Hero_1 />
       <Hero_2 />
       <Hero_3 />
       <System_display />
-      <Hero4 /> */}
+      <Hero4 />
       <Tv_1 />
     </>
   );

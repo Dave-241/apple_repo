@@ -8,6 +8,13 @@ import img4 from "../../../../public/mac/mac_app4.jpg";
 import img5 from "../../../../public/mac/mac_app5.jpg";
 import img6 from "../../../../public/mac/mac_app6.jpg";
 import img7 from "../../../../public/mac/mac_app7.jpg";
+import change1 from "../../../../public/mac/mac_change_1.jpg";
+import change2 from "../../../../public/mac/mac_change_2.jpg";
+import change3 from "../../../../public/mac/mac_change_3.jpg";
+import change4 from "../../../../public/mac/mac_change_4.jpg";
+import change5 from "../../../../public/mac/mac_change_5.jpg";
+import change6 from "../../../../public/mac/mac_change_6.jpg";
+import change7 from "../../../../public/mac/mac_change_7.jpg";
 import Image from "next/image";
 
 const Tv_1 = () => {
@@ -15,6 +22,7 @@ const Tv_1 = () => {
   const [check, setcheck] = useState("Safari");
   const [des, setdes] = useState("");
   const [short, setshort] = useState("Safari");
+  const [changeimg, setchangeimg] = useState(change1);
 
   const content2: any = [
     {
@@ -23,6 +31,7 @@ const Tv_1 = () => {
           img: img1,
           text: "Safari",
           t2: "Safari has innovative features that let you enjoy more of the web. In even more ways. Built-in privacy features help protect your information and keep your Mac secure.",
+          change: change1,
         },
       ],
     },
@@ -31,7 +40,8 @@ const Tv_1 = () => {
         {
           img: img2,
           text: "Photos",
-          t2: "Keep your growing library organized and accessible. Perfect your images ancreate beautiful gifts for sharing. And with iCloud Photos, you can store lifetime’s worth of photos and videos in the cloud.",
+          t2: "Keep your growing library organized and accessible. Perfect your images ancreate beautiful gifts for sharing. And with iCloud Photos, you can store lifetimes worth of photos and videos in the cloud.",
+          change: change2,
         },
       ],
     },
@@ -41,6 +51,7 @@ const Tv_1 = () => {
           img: img3,
           text: "iMovie",
           t2: "Tell stories like never before. A simple design and intuitive editing features make it easy to create beautiful 4K movies and Hollywood-style trailers.",
+          change: change3,
         },
       ],
     },
@@ -50,6 +61,7 @@ const Tv_1 = () => {
           img: img4,
           text: "GarageBand",
           t2: "The easiest way to create great-sounding songs on your Mac. With an intuitive interface and access to a complete sound library, its never been easier to learn, play, record, and share music like a pro.",
+          change: change4,
         },
       ],
     },
@@ -59,6 +71,7 @@ const Tv_1 = () => {
           img: img5,
           text: "Pages",
           t2: "This powerful word processor gives you everything you need to create documents that look beautiful. And read beautifully. It lets you work seamlessly between Mac, iOS, and iPadOS devices. And work effortlessly with people who use Microsoft Word.",
+          change: change5,
         },
       ],
     },
@@ -68,6 +81,7 @@ const Tv_1 = () => {
           img: img6,
           text: "Numbers",
           t2: "Create sophisticated spreadsheets with dramatic interactive charts, tables, and images that paint a revealing picture of your data. Work seamlessly between Mac, iOS, and iPadOS devices. And work effortlessly with people ",
+          change: change6,
         },
       ],
     },
@@ -77,13 +91,15 @@ const Tv_1 = () => {
           img: img7,
           text: "Keynote",
           t2: "Bring your ideas to life with beautiful presentations. Employ powerful tools and dazzling effects that keep your audience engaged. Work seamlessly between Mac, iOS, and iPadOS devices. And work effortlessly with people who use Microsoft PowerPoint.",
+          change: change7,
         },
       ],
     },
   ];
 
-  const showborder = (s: any) => {
+  const showborder = (s: any, i: any) => {
     setcheck(s);
+    setchangeimg(i);
   };
 
   const showtext = (a: any) => {
@@ -106,9 +122,9 @@ const Tv_1 = () => {
         React Transitions Library
       </FadeInTransition> */}
 
-      <div className="w-full border bg-white flex p-[30px] sm:p-[10px] flex-col gap-[30px] sm:gap[10px]">
-        <div className="w-full border flex justify-center bg-[#fbfbfd]">
-          <div className="flex-col gap-[20px] border w-[70%] sm:w-[95%] flex items-center">
+      <div className="w-full  bg-white flex p-[30px] sm:p-[10px] flex-col gap-[30px] sm:gap[10px]">
+        <div className="w-full  flex justify-center items-center bg-[#fbfbfd]  py-[30px] sm:pb-[40px] pb-[100px]">
+          <div className="flex-col gap-[20px]  w-[70%] sm:w-[95%] flex items-center">
             <div className="flex flex-col items-center flex-wrap gap-[10px]">
               <h1 className="sm:text-[32px] text-[48px] text-center">
                 Built-in Apps
@@ -133,7 +149,7 @@ const Tv_1 = () => {
                             borderBottom: s.text == check ? "1px solid" : "",
                           }}
                           onClick={() => {
-                            showborder(s.text);
+                            showborder(s.text, s.change);
                             showtext(s.t2);
                             showshort(s.text);
                           }}
@@ -142,7 +158,7 @@ const Tv_1 = () => {
                             <Image
                               src={s.img}
                               alt="this"
-                              className="w-full h-auto"
+                              className="w-full h-auto "
                             />
                           </div>
                           <p className="text-[15px] sm:text-[9px]">{s.text}</p>
@@ -153,7 +169,7 @@ const Tv_1 = () => {
                 );
               })}
             </div>
-            <div className="flex flex-col items-center flex-wrap gap-[10px]">
+            <div className="flex flex-col items-center flex-wrap gap-[10px] pb-[40px]">
               <p
                 className="text-center text-[13px] tv1_txt"
                 style={{ transition: "1s ease" }}
@@ -164,6 +180,10 @@ const Tv_1 = () => {
               <p className="text-blue-700">
                 Learn more about {short} <i className="bi bi-chevron-right"></i>
               </p>
+            </div>
+
+            <div className="w-[390px]  sm:w-[300px] h-[240px] z-[200] tv_1_change relative p-[20px] ">
+              <Image src={changeimg} alt="this" className="w-full h-auto " />
             </div>
           </div>
         </div>
