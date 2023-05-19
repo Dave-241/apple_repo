@@ -11,3 +11,7 @@
     background-position: bottom center;
   }
 }
+
+.hero5_bg {
+  overflow: hidden;
+}
