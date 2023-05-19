@@ -15,3 +15,16 @@
 .hero5_bg {
   overflow: hidden;
 }
+
+.hero6_1 {
+  background-image: url(../../../../public/mac/mac_hero6_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.hero6_2 {
+  background-image: url(../../../../public/mac/mac_hero6_2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

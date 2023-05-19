@@ -48,6 +48,85 @@ const Hero4 = () => {
             </p>
           </div>
         </div>
+        {/* third section */}
+        <div className="w-full sm:gap-[20px]  h-[700px] hero5_bg justify-between flex sm:flex-col sm:h-auto">
+          <div className="w-[49%] sm:w-[100%] border relative bg-[#f2f2f2] sm:h-[500px] ">
+            <div className="absolute bottom-0 left-0 hero6_1 w-full h-[40%]  sm:h-[180px]"></div>
+            <div className="  sm:w-full pt-[20px] text-center sm:h-auto sm:pt-[20px] justify-center flex-col flex items-center text-[#1d1d1f] gap-[10px] sm:pl-0  w-full ">
+              <p className="text-[24px] font-[700] ">Accessories</p>
+              <h1 className="text-[48px] sm:text-[32px] sm:w-[100%] z-[20] font-[700] w-[80%] ">
+                Explore Mac accessories.
+              </h1>
+              {/* <p className="text-center text-[17px] z-[20] sm:w-[100%] w-[80%]">
+                And pay for your new Mac over 12 months, interest-free when you
+                choose to check out with Apple Card Monthly Installments.*
+              </p> */}
+              <p className="px-[20px] py-[10px] bg-blue-600 text-white rounded-[20px] cursor hover:bg-blue-900">
+                Shop
+              </p>
+              {/* <p className="text-blue-500 hover:underline cursor sm:w-[100%] text-[17px] z-[20] ">
+                Learn more <i className="bi bi-chevron-right"></i>
+              </p> */}
+            </div>
+          </div>
+
+          {/*  */}
+          {/*  */}
+          <div className="w-[49%] sm:w-[100%] border relative bg-[#f2f2f2] sm:h-[500px]">
+            <div className="absolute bottom-0 left-0 hero6_2 w-full sm:h-[180px] h-[40%]"></div>
+            <div className=" w-[fit-content] sm:w-full pt-[20px] text-center sm:h-auto sm:pt-[20px] justify-center flex-col flex items-center text-[#1d1d1f] gap-[10px] sm:pl-0  ">
+              <p className="text-[24px] font-[700] ">Apple Trade In</p>
+              <h1 className="text-[48px] sm:text-[32px] sm:w-[100%] z-[20] font-[700] w-[80%] ">
+                Get credit toward a new Mac.
+              </h1>
+              <p className="text-center text-[20px] z-[20] sm:text-[16px] sm:w-[100%] w-[80%]">
+                And pay for your new Mac over 12 months, interest-free when you
+                choose to check out with Apple Card Monthly Installments.*
+              </p>
+
+              <p className="text-blue-500 hover:underline cursor sm:w-[100%] text-[17px] z-[20] ">
+                Find your trade‑in value<i className="bi bi-chevron-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* fourth section  */}
+        <div className="w-full border h-auto justify-between flex items-center sm:flex-col sm:gap-[20px]">
+          <div className="border w-[30%] flex flex-col items-center justify-center sm:w-[90%] gap-[5px]">
+            <i className="bi bi-box text-[50px] text-gray-500"></i>
+            <h1 className="text-[21px] font-[700]">Fast delivery or pickup</h1>
+            <h1 className="text-[21px] text-center">
+              Enjoy two-hour delivery from an Apple Store, free delivery, or
+              easy pickup.
+            </h1>
+            <p className="text-[21px] hover:underline cursor text-blue-600">
+              Learn more <i className="bi bi-chevron-right"></i>
+            </p>
+          </div>
+          <div className="border w-[30%] flex flex-col items-center justify-center sm:w-[90%] gap-[5px]">
+            <i className="bi bi-currency-dollar text-[50px] text-gray-500"></i>
+            <h1 className="text-[21px] font-[700]">Pay monthly at 0% APR</h1>
+            <h1 className="text-[21px] text-center">
+              You can pay over time when you choose to check out with Apple Card
+              Monthly Installments.*
+            </h1>
+            <p className="text-[21px] hover:underline cursor text-blue-600">
+              Learn more <i className="bi bi-chevron-right"></i>
+            </p>
+          </div>
+          <div className="border w-[30%] flex flex-col items-center justify-center sm:w-[90%] gap-[5px]">
+            <i className="bi bi-chat text-[50px] text-gray-500"></i>
+            <h1 className="text-[21px] font-[700]">Get help buying</h1>
+            <h1 className="text-[21px] text-center">
+              Have a question? Call a Specialist or chat online. Call
+              1‑800-MY‑APPLE.
+            </h1>
+            <p className="text-[21px] hover:underline cursor text-blue-600">
+              Contact us <i className="bi bi-chevron-right"></i>
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
