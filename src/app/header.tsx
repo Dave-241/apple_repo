@@ -389,16 +389,16 @@ const Header = (props: any) => {
 
   // mobile menu array
   const mobileMenu: any = [
-    "store",
-    "mac",
-    "iPad",
-    "iPhone",
-    "watch",
-    "airPods",
-    "tV",
-    "entertainment",
-    "accessories",
-    "support",
+    { link: "store", text: "store" },
+    { link: "mac", text: "mac" },
+    { link: "store", text: "iPad" },
+    { link: "mac", text: "iPhone" },
+    { link: "store", text: "watch" },
+    { link: "mac", text: "airpods" },
+    { link: "store", text: "tv" },
+    { link: "mac", text: "entertainment" },
+    { link: "store", text: "accessories" },
+    { link: "mac", text: "support" },
   ];
 
   const show_mob_nav = () => {
@@ -452,78 +452,94 @@ const Header = (props: any) => {
             >
               Mac
             </Link>
-            <p
-              className="nav_items"
-              onMouseMove={() => {
-                ipad();
-                defaultSetting();
-              }}
-            >
-              Ipad
-            </p>
-            <p
-              className="nav_items"
-              onMouseMove={() => {
-                iphone();
-                defaultSetting();
-              }}
-            >
-              Iphone
-            </p>
-            <p
-              className="nav_items"
-              onMouseMove={() => {
-                watch();
-                defaultSetting();
-              }}
-            >
-              Watch
-            </p>
-            <p
-              className="nav_items"
-              onMouseMove={() => {
-                airpods();
-                defaultSetting();
-              }}
-            >
-              Airpods
-            </p>
-            <p
-              className="nav_items"
-              onMouseMove={() => {
-                tv();
-                defaultSetting();
-              }}
-            >
-              Tv & Home
-            </p>
-            <p
-              className="nav_items"
-              onMouseMove={() => {
-                entertainment();
-                defaultSetting();
-              }}
-            >
-              Entertainment
-            </p>
-            <p
-              className="nav_items"
-              onMouseMove={() => {
-                accessories();
-                defaultSetting();
-              }}
-            >
-              Accessories
-            </p>
-            <p
-              className="nav_items"
-              onMouseMove={() => {
-                support();
-                defaultSetting();
-              }}
-            >
-              Support
-            </p>
+            <Link href="/store">
+              <p
+                className="nav_items"
+                onMouseMove={() => {
+                  ipad();
+                  defaultSetting();
+                }}
+              >
+                Ipad
+              </p>
+            </Link>
+            <Link href="/mac">
+              <p
+                className="nav_items"
+                onMouseMove={() => {
+                  iphone();
+                  defaultSetting();
+                }}
+              >
+                Iphone
+              </p>
+            </Link>
+            <Link href="/store">
+              <p
+                className="nav_items"
+                onMouseMove={() => {
+                  watch();
+                  defaultSetting();
+                }}
+              >
+                Watch
+              </p>
+            </Link>
+            <Link href="/mac">
+              <p
+                className="nav_items"
+                onMouseMove={() => {
+                  airpods();
+                  defaultSetting();
+                }}
+              >
+                Airpods
+              </p>
+            </Link>
+            <Link href="/store">
+              <p
+                className="nav_items"
+                onMouseMove={() => {
+                  tv();
+                  defaultSetting();
+                }}
+              >
+                Tv & Home
+              </p>
+            </Link>
+            <Link href="/mac">
+              <p
+                className="nav_items"
+                onMouseMove={() => {
+                  entertainment();
+                  defaultSetting();
+                }}
+              >
+                Entertainment
+              </p>
+            </Link>
+            <Link href="/store">
+              <p
+                className="nav_items"
+                onMouseMove={() => {
+                  accessories();
+                  defaultSetting();
+                }}
+              >
+                Accessories
+              </p>
+            </Link>
+            <Link href="/mac">
+              <p
+                className="nav_items"
+                onMouseMove={() => {
+                  support();
+                  defaultSetting();
+                }}
+              >
+                Support
+              </p>
+            </Link>
             <i onMouseMove={reset} className=" bi bi-search nav_items"></i>
             <i onMouseMove={reset} className=" bi bi-bag nav_items"></i>
           </div>
@@ -630,15 +646,15 @@ const Header = (props: any) => {
         </div>
 
         <div className=" flex flex-col h-[auto] gap-[5px] px-[40px]">
-          {mobilearray.map((e, index) => {
+          {mobilearray.map((e: any, index: any) => {
             return (
               <Link
-                href={e}
+                href={e.link}
                 key={index}
                 style={{ color: navtext, textDecoration: "none" }}
                 className=" text-[30px] hover:text-white capitalize"
               >
-                {e}
+                {e.text}
               </Link>
             );
           })}
