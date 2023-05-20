@@ -25,6 +25,8 @@ CSS: Used for styling the web pages and achieving the desired visual design.
 JavaScript: Used for implementing interactive elements and enhancing the website's functionality.
 
 Next.js: A React framework used for building server-rendered and statically generated web applications. It provides advanced features such as code splitting, routing, and server-side rendering, which enhance the performance and user experience of the website.
+
+
 Responsive Design: Media queries and responsive techniques are employed to ensure a seamless experience across different devices.
 
 ## Disclaimer
